@@ -1,0 +1,284 @@
+.founderPage {
+  padding-top: 70px;
+}
+
+.hero {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.heroContent {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.founderImage {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.founderImage img {
+  width: 100%;
+  height: auto;
+}
+
+.founderInfo h1 {
+  font-size: 3rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 1.3rem;
+  color: #e74c3c;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.biography {
+  padding: 80px 0;
+}
+
+.bioContent {
+  display: grid;
+  gap: 60px;
+}
+
+.story h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.story p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.experience h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.experienceTimeline {
+  display: grid;
+  gap: 30px;
+}
+
+.timelineItem {
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-left: 4px solid #e74c3c;
+}
+
+.year {
+  font-weight: 600;
+  color: #e74c3c;
+  font-size: 1.1rem;
+}
+
+.position {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.company {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.timelineItem p {
+  color: #34495e;
+  line-height: 1.6;
+}
+
+.qualifications {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.qualifications h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 60px;
+}
+
+.qualificationsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.qualification {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.qualification h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.qualification ul {
+  list-style: none;
+}
+
+.qualification li {
+  padding: 8px 0;
+  color: #34495e;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.qualification li:last-child {
+  border-bottom: none;
+}
+
+.philosophy {
+  padding: 80px 0;
+}
+
+.philosophy h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 60px;
+}
+
+.philosophyContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.philosophyText p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #34495e;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.values h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.values ul {
+  list-style: none;
+}
+
+.values li {
+  padding: 10px 0;
+  color: #34495e;
+  line-height: 1.6;
+}
+
+.values strong {
+  color: #e74c3c;
+}
+
+.personal {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.personal h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 60px;
+}
+
+.personalContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.interests h3,
+.community h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.interests p {
+  color: #34495e;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.community ul {
+  list-style: none;
+}
+
+.community li {
+  padding: 8px 0;
+  color: #34495e;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.community li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .heroContent {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .founderImage {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .founderInfo h1 {
+    font-size: 2.5rem;
+  }
+  
+  .philosophyContent {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .personalContent {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .qualificationsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .founderInfo h1 {
+    font-size: 2rem;
+  }
+}

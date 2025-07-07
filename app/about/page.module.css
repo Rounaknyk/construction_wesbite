@@ -1,0 +1,258 @@
+.aboutPage {
+  padding-top: 70px;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 0;
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: white;
+  margin-bottom: 80px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+.mission {
+  margin-bottom: 80px;
+}
+
+.missionContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.textContent h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.textContent p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #34495e;
+}
+
+.imageContainer {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+}
+
+.values {
+  margin-bottom: 80px;
+}
+
+.values h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 60px;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.valueCard {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.valueCard:hover {
+  transform: translateY(-5px);
+}
+
+.valueIcon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.valueCard h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.valueCard p {
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+.services {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+  margin-bottom: 80px;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 60px;
+}
+
+.servicesContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.servicesList {
+  display: grid;
+  gap: 30px;
+}
+
+.serviceCategory h3 {
+  color: #e74c3c;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.serviceCategory ul {
+  list-style: none;
+}
+
+.serviceCategory li {
+  padding: 8px 0;
+  color: #34495e;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.serviceCategory li:last-child {
+  border-bottom: none;
+}
+
+.servicesImage {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.servicesImage img {
+  width: 100%;
+  height: auto;
+}
+
+.achievements {
+  margin-bottom: 80px;
+}
+
+.achievements h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 60px;
+}
+
+.achievementsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.achievementCard {
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.achievementCard h3 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.achievementCard p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.whyChooseUs h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 60px;
+}
+
+.reasonsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.reason {
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.reason h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.reason p {
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .missionContent {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .servicesContent {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .achievementsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .achievementsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
