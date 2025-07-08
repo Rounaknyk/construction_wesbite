@@ -2,8 +2,8 @@ import Image from 'next/image'
 import styles from './page.module.css'
 
 export const metadata = {
-  title: 'About Our Founder - Michael Rodriguez | Siddharth Construction',
-  description: 'Meet Michael Rodriguez, founder and CEO of Siddharth Construction, with over 20 years of experience in the construction industry.',
+  title: 'About Our Founder - Michael Rodriguez | Siddharth Constructions',
+  description: 'Meet Michael Rodriguez, founder and CEO of Siddharth Constructions, with over 20 years of experience in the construction industry.',
 }
 
 export default function AboutFounder() {
@@ -41,7 +41,7 @@ export default function AboutFounder() {
                 Under the M2K banner, Milind spearheaded several landmark developments including M2K Banyan (Phase 1, 2 & 3), Sharda Enclave, and M2K Classic — projects that have earned him a reputation for trust, timely delivery, and uncompromised quality.
                 </p>
                 <p>
-                  In 2018, he expanded his vision by founding Siddharth Constructions, a new chapter dedicated to innovation, sustainability, and creating modern living spaces that resonate with the evolving needs of Goan communities. With over a decade of experience and a clear focus on the future, Milind Subhedar is now committed to building forward — crafting spaces that not only stand tall, but stand for something.
+                  In 2018, he expanded his vision by founding Siddharth Constructionss, a new chapter dedicated to innovation, sustainability, and creating modern living spaces that resonate with the evolving needs of Goan communities. With over a decade of experience and a clear focus on the future, Milind Subhedar is now committed to building forward — crafting spaces that not only stand tall, but stand for something.
                 </p>
             </div>
             
@@ -51,7 +51,7 @@ export default function AboutFounder() {
                 <div className={styles.timelineItem}>
                   <div className={styles.year}>2018 - Present</div>
                   <div className={styles.position}>Founder & CEO</div>
-                  <div className={styles.company}>Siddharth Construction</div>
+                  <div className={styles.company}>Siddharth Constructions</div>
                   <p>Led the company from startup to industry leader, overseeing 150+ successful projects.</p>
                 </div>
                 

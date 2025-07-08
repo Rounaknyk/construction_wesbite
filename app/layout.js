@@ -3,7 +3,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 
 export const metadata = {
-  title: 'Siddharth Construction - Professional Construction Services',
+  title: 'Siddharth Constructions - Professional Construction Services',
   description: 'Leading construction company specializing in residential and commercial projects. Quality construction services with experienced professionals.',
   keywords: 'construction, building, renovation, contractor, residential, commercial',
 }

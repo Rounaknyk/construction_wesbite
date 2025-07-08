@@ -2,7 +2,7 @@ import ProjectCard from '../../components/ProjectCard'
 import styles from './page.module.css'
 
 export const metadata = {
-  title: 'Ongoing Projects - Siddharth Construction',
+  title: 'Ongoing Projects - Siddharth Constructions',
   description: 'View our current construction projects in progress including residential, commercial, and infrastructure developments.',
 }
 

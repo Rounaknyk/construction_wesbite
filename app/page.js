@@ -2,45 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import ProjectCard from './components/ProjectCard'
 import styles from './page.module.css'
-
-const featuredProjects = [
-  {
-    id: 1,
-    title: 'Luxury Residential Complex',
-    location: 'Downtown District',
-    description: 'Modern 50-unit residential complex with premium amenities.',
-    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop',
-    status: 'upcoming',
-    details: {
-      duration: '18 months',
-      type: 'Residential'
-    }
-  },
-  {
-    id: 2,
-    title: 'Commercial Office Tower',
-    location: 'Business Park',
-    description: 'State-of-the-art 25-story office building with eco-friendly features.',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop',
-    status: 'ongoing',
-    details: {
-      duration: '24 months',
-      type: 'Commercial'
-    }
-  },
-  {
-    id: 3,
-    title: 'Shopping Mall Renovation',
-    location: 'City Center',
-    description: 'Complete renovation of existing mall with modern retail spaces.',
-    image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop',
-    status: 'ongoing',
-    details: {
-      duration: '12 months',
-      type: 'Renovation'
-    }
-  }
-]
+import {featuredProjects} from './constants/projects'
+import { projectsCompleted, yearsOfExperience, teamMembers } from './constants/basic'
 
 export default function Home() {
   return (
@@ -48,7 +11,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <h1>Siddharth Construction</h1>
+          <h1>Siddharth Constructions</h1>
           <p className={styles.tagline}>Building Tomorrow, Today</p>
           <p className={styles.description}>
             We are a leading construction company committed to delivering exceptional quality 
@@ -125,7 +88,7 @@ export default function Home() {
           </div>
           
           <div className={styles.projectsCta}>
-            <Link href="/projects/upcoming" className="btn">
+            <Link href="/projects/" className="btn">
               View All Projects
             </Link>
           </div>
@@ -137,15 +100,15 @@ export default function Home() {
         <div className="container">
           <div className={styles.statsGrid}>
             <div className={styles.statCard}>
-              <h3>150+</h3>
+              <h3>{projectsCompleted-1}+</h3>
               <p>Projects Completed</p>
             </div>
             <div className={styles.statCard}>
-              <h3>15+</h3>
+              <h3>{yearsOfExperience}+</h3>
               <p>Years Experience</p>
             </div>
             <div className={styles.statCard}>
-              <h3>50+</h3>
+              <h3>{teamMembers-1}+</h3>
               <p>Expert Team Members</p>
             </div>
             <div className={styles.statCard}>

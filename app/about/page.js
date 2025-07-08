@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import { projectsCompleted, yearsOfExperience, teamMembers } from '../constants/basic'
 
 export const metadata = {
-  title: 'About Siddharth Construction - Our Company Story',
-  description: 'Learn about Siddharth Construction\'s mission, values, and commitment to quality construction services.',
+  title: 'About Siddharth Constructions - Our Company Story',
+  description: 'Learn about Siddharth Constructions\'s mission, values, and commitment to quality construction services.',
 }
 
 export default function AboutCompany() {
@@ -12,7 +13,7 @@ export default function AboutCompany() {
       <div className="container">
         <section className={styles.hero}>
           <div className={styles.heroContent}>
-            <h1>About Siddharth Construction</h1>
+            <h1>About Siddharth Constructions</h1>
             <p className={styles.subtitle}>
               Building Excellence Since 2018
             </p>
@@ -24,7 +25,7 @@ export default function AboutCompany() {
             <div className={styles.textContent}>
               <h2>Our Mission</h2>
               <p>
-                At Siddharth Constructions, our mission is to build more than just homes — we aim to create enduring spaces that foster community, comfort, and connection. Guided by the principles of quality, transparency, and sustainability, we are committed to delivering construction excellence while honoring Goa’s cultural heritage.
+                At Siddharth Constructionss, our mission is to build more than just homes — we aim to create enduring spaces that foster community, comfort, and connection. Guided by the principles of quality, transparency, and sustainability, we are committed to delivering construction excellence while honoring Goa’s cultural heritage.
               </p>
               <p>
 We strive to blend modern design with thoughtful functionality, ensuring that every project adds long-term value to our clients and the neighborhoods we serve. Through innovation, integrity, and a client-first approach, we continue to shape a built environment that stands the test of time — both structurally and emotionally.
@@ -82,76 +83,27 @@ We strive to blend modern design with thoughtful functionality, ensuring that ev
           </div>
         </section>
 
-        <section className={styles.services}>
-          <h2>Our Services</h2>
-          <div className={styles.servicesContent}>
-            <div className={styles.servicesList}>
-              <div className={styles.serviceCategory}>
-                <h3>Residential Construction</h3>
-                <ul>
-                  <li>Custom Home Building</li>
-                  <li>Multi-family Housing</li>
-                  <li>Luxury Residences</li>
-                  <li>Affordable Housing Projects</li>
-                </ul>
-              </div>
-              
-              <div className={styles.serviceCategory}>
-                <h3>Commercial Construction</h3>
-                <ul>
-                  <li>Office Buildings</li>
-                  <li>Retail Spaces</li>
-                  <li>Industrial Facilities</li>
-                  <li>Hospitality Projects</li>
-                </ul>
-              </div>
-              
-              <div className={styles.serviceCategory}>
-                <h3>Specialized Services</h3>
-                <ul>
-                  <li>Renovation & Remodeling</li>
-                  <li>Project Management</li>
-                  <li>Design-Build Services</li>
-                  <li>Consultation & Planning</li>
-                </ul>
-              </div>
-            </div>
-            
-            <div className={styles.servicesImage}>
-              <Image
-                src="https://images.unsplash.com/photo-1590736969955-71cc94901144?w=500&h=400&fit=crop"
-                alt="Construction services"
-                width={500}
-                height={400}
-              />
-            </div>
-          </div>
-        </section>
 
         <section className={styles.achievements}>
           <h2>Our Achievements</h2>
           <div className={styles.achievementsGrid}>
             <div className={styles.achievementCard}>
-              <h3>150+</h3>
+              <h3>{projectsCompleted - 1}+</h3>
               <p>Successful Projects</p>
             </div>
             <div className={styles.achievementCard}>
-              <h3>15+</h3>
+              <h3>{yearsOfExperience}+</h3>
               <p>Years in Business</p>
             </div>
             <div className={styles.achievementCard}>
-              <h3>50+</h3>
+              <h3>{teamMembers - 1}+</h3>
               <p>Professional Team</p>
-            </div>
-            <div className={styles.achievementCard}>
-              <h3>25+</h3>
-              <p>Industry Awards</p>
             </div>
           </div>
         </section>
 
         <section className={styles.whyChooseUs}>
-          <h2>Why Choose Siddharth Construction?</h2>
+          <h2>Why Choose Siddharth Constructions?</h2>
           <div className={styles.reasonsGrid}>
             <div className={styles.reason}>
               <h3>Proven Track Record</h3>
@@ -171,6 +123,7 @@ We strive to blend modern design with thoughtful functionality, ensuring that ev
             </div>
           </div>
         </section>
+        <br></br>
       </div>
     </div>
   )

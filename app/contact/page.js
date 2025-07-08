@@ -85,9 +85,9 @@ export default function ContactPage() {
             </div>
             <div className={styles.infoCard}>
               <h3>📞 Phone</h3>
-              <p>Person 1: +91 8805763609</p>
+              <p>Proprietor 1: +91 8805763609</p>
               <br />
-              <p>Person 2: +91 8793804551</p>
+              <p>Proprietor 2: +91 8793804551</p>
             </div>
             <div className={styles.infoCard}>
               <h3>✉️ Email</h3>
@@ -214,7 +214,7 @@ export default function ContactPage() {
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
-              title="Siddharth Construction Location"
+              title="Siddharth Constructions Location"
             ></iframe>
           </div>
         </section>

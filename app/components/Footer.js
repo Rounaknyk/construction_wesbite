@@ -7,7 +7,7 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.footerContent}>
           <div className={styles.footerSection}>
-            <h3>Siddharth Construction</h3>
+            <h3>Siddharth Constructions</h3>
             <p>Building dreams with quality and precision since 2018.</p>
           </div>
           
@@ -33,14 +33,14 @@ export default function Footer() {
           
           <div className={styles.footerSection}>
             <h4>Contact Info</h4>
-            <p>📍 123 Construction Ave, Building City, BC 12345</p>
-            <p>📞 (555) 123-4567</p>
-            <p>✉️ info@buildmaster.com</p>
+            <p>📍 Address: 102, first floor, prime elite building, Near hotel Urvashi, Vasco da Gama, Goa- 403802</p>
+            <p>📞 (+91) 8805763609</p>
+            <p>✉️ siddharthconstructions01@gmail.com</p>
           </div>
         </div>
         
         <div className={styles.footerBottom}>
-          <p>&copy; 2024 Siddharth Construction. All rights reserved.</p>
+          <p>&copy; 2024 Siddharth Constructions. All rights reserved.</p>
         </div>
       </div>
     </footer>

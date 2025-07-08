@@ -15,8 +15,8 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link href="/" className={styles.logo}>
-          <Image src="/logo.png" alt="Siddharth Construction Logo" width={48} height={48} />
-          <h1>Siddharth Construction</h1>
+          <Image src="/logo.png" alt="Siddharth Constructions Logo" width={48} height={48} />
+          <h1>Siddharth Constructions</h1>
         </Link>
     
         <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>

@@ -1,6 +1,6 @@
 // app/gallery/layout.js
 export const metadata = {
-  title: 'Project Gallery - Siddharth Construction',
+  title: 'Project Gallery - Siddharth Constructions',
   description: 'View our construction project gallery showcasing completed works, ongoing projects, and company milestones.',
 }
 
