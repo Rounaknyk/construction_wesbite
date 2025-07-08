@@ -204,6 +204,58 @@
   }
 }
 
+/* Add to your existing page.module.css */
+.spinner {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.errorMessage {
+  color: #e74c3c;
+  background-color: #fde8e8;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-left: 4px solid #e74c3c;
+}
+
+.successMessage {
+  text-align: center;
+  padding: 30px;
+  background-color: #f0f9f0;
+  border-radius: 8px;
+  border-left: 4px solid #2ecc71;
+}
+
+.successMessage h3 {
+  color: #2ecc71;
+  margin-bottom: 15px;
+}
+
+.formGroup label:after {
+  content: ' *';
+  color: #e74c3c;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.formGroup:has(input:required) label:after,
+.formGroup:has(select:required) label:after,
+.formGroup:has(textarea:required) label:after {
+  opacity: 1;
+}
+
 @media (max-width: 480px) {
   .hero h1 {
     font-size: 2rem;

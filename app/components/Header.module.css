@@ -19,10 +19,22 @@
   height: 70px;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between logo and text */
+}
+
 .logo h1 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #e74c3c;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none; /* Ensure no underline */
+}
+
+.spacer {
+  flex: 1;
 }
 
 .nav {

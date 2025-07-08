@@ -55,7 +55,7 @@ export default function Home() {
             and innovative solutions for residential and commercial projects.
           </p>
           <div className={styles.cta}>
-            <Link href="/projects/upcoming" className="btn">
+            <Link href="/projects/" className="btn">
               View Our Projects
             </Link>
             <Link href="/contact" className="btn btn-secondary">

@@ -1,7 +1,8 @@
+// app/components/ProjectCard.js
 import Image from 'next/image'
 import styles from './ProjectCard.module.css'
 
-export default function ProjectCard({ project, showStatus = false }) {
+export default function ProjectCard({ project, showStatus = false, showCompletion = false }) {
   return (
     <div className={styles.card}>
       <div className={styles.imageContainer}>
@@ -14,7 +15,8 @@ export default function ProjectCard({ project, showStatus = false }) {
         />
         {showStatus && (
           <span className={`${styles.status} ${styles[project.status]}`}>
-            {project.status === 'upcoming' ? 'Upcoming' : 'In Progress'}
+            {project.status === 'upcoming' ? 'Upcoming' : 
+             project.status === 'ongoing' ? 'In Progress' : 'Completed'}
           </span>
         )}
       </div>
@@ -24,10 +26,15 @@ export default function ProjectCard({ project, showStatus = false }) {
         <p className={styles.location}>{project.location}</p>
         <p className={styles.description}>{project.description}</p>
         
-        {project.details && (
-          <div className={styles.details}>
-            <span>📅 {project.details.duration}</span>
-            <span>🏗️ {project.details.type}</span>
+        {showCompletion && project.completion && (
+          <div className={styles.completion}>
+            <div className={styles.completionBar}>
+              <div 
+                className={styles.completionFill}
+                style={{ width: project.completion }}
+              ></div>
+            </div>
+            <span>{project.completion} complete</span>
           </div>
         )}
       </div>

@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import styles from './Header.module.css'
+import Image from 'next/image'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -14,15 +15,15 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link href="/" className={styles.logo}>
+          <Image src="/logo.png" alt="Siddharth Construction Logo" width={48} height={48} />
           <h1>Siddharth Construction</h1>
         </Link>
-        
+    
         <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
           <Link href="/">Home</Link>
           <Link href="/about">About Company</Link>
           <Link href="/founder">About Founder</Link>
-          <Link href="/projects/upcoming">Upcoming Projects</Link>
-          <Link href="/projects/ongoing">Ongoing Projects</Link>
+          <Link href="/projects">Projects</Link> {/* New tab for all projects */}
           <Link href="/gallery">Gallery</Link>
           <Link href="/contact">Contact</Link>
         </nav>

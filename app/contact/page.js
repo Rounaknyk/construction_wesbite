@@ -1,9 +1,11 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
+import emailjs from '@emailjs/browser'
 import styles from './page.module.css'
 
 export default function ContactPage() {
+  const formRef = useRef()
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -31,7 +33,22 @@ export default function ContactPage() {
     setFormStatus({ submitting: true, submitted: false, error: null })
 
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000))
+      console.log("1");
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+       console.log("2");
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send message')
+      }
 
       setFormStatus({ submitting: false, submitted: true, error: null })
       setFormData({
@@ -42,7 +59,12 @@ export default function ContactPage() {
         message: ''
       })
     } catch (error) {
-      setFormStatus({ submitting: false, submitted: false, error: error.message })
+      console.error('Submission error:', error)
+      setFormStatus({ 
+        submitting: false, 
+        submitted: false, 
+        error: error.message || 'Failed to send message. Please try again later.' 
+      })
     }
   }
 
@@ -64,7 +86,7 @@ export default function ContactPage() {
             <div className={styles.infoCard}>
               <h3>📞 Phone</h3>
               <p>Person 1: +91 8805763609</p>
-              <br></br>
+              <br />
               <p>Person 2: +91 8793804551</p>
             </div>
             <div className={styles.infoCard}>
@@ -91,9 +113,9 @@ export default function ContactPage() {
                 </button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit}>
+              <form ref={formRef} onSubmit={handleSubmit}>
                 <div className={styles.formGroup}>
-                  <label htmlFor="name">Full Name</label>
+                  <label htmlFor="name">Full Name *</label>
                   <input
                     type="text"
                     id="name"
@@ -105,7 +127,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className={styles.formGroup}>
-                  <label htmlFor="email">Email Address</label>
+                  <label htmlFor="email">Email Address *</label>
                   <input
                     type="email"
                     id="email"
@@ -128,7 +150,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className={styles.formGroup}>
-                  <label htmlFor="subject">Subject</label>
+                  <label htmlFor="subject">Subject *</label>
                   <select
                     id="subject"
                     name="subject"
@@ -146,7 +168,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className={styles.formGroup}>
-                  <label htmlFor="message">Message</label>
+                  <label htmlFor="message">Message *</label>
                   <textarea
                     id="message"
                     name="message"
@@ -168,7 +190,14 @@ export default function ContactPage() {
                   className="btn"
                   disabled={formStatus.submitting}
                 >
-                  {formStatus.submitting ? 'Sending...' : 'Send Message'}
+                  {formStatus.submitting ? (
+                    <>
+                      <span className={styles.spinner}></span>
+                      Sending...
+                    </>
+                  ) : (
+                    'Send Message'
+                  )}
                 </button>
               </form>
             )}
@@ -197,27 +226,18 @@ export default function ContactPage() {
               <div className={styles.memberPhoto}>
                 <div className={styles.photoPlaceholder}>👨‍💼</div>
               </div>
-              <h3>Sarah Johnson</h3>
+              <h3>Contact Person 1</h3>
               <p className={styles.position}>Project Manager</p>
-              <p className={styles.contact}>sarah@buildmaster.com<br />(555) 123-4567 ext. 101</p>
+              <p className={styles.contact}>+91 8805763609</p>
             </div>
 
             <div className={styles.teamMember}>
               <div className={styles.memberPhoto}>
                 <div className={styles.photoPlaceholder}>👩‍💼</div>
               </div>
-              <h3>David Chen</h3>
+              <h3>Contact Person 2</h3>
               <p className={styles.position}>Sales Director</p>
-              <p className={styles.contact}>david@buildmaster.com<br />(555) 123-4567 ext. 102</p>
-            </div>
-
-            <div className={styles.teamMember}>
-              <div className={styles.memberPhoto}>
-                <div className={styles.photoPlaceholder}>👨‍🔧</div>
-              </div>
-              <h3>Maria Rodriguez</h3>
-              <p className={styles.position}>Customer Support</p>
-              <p className={styles.contact}>maria@buildmaster.com<br />(555) 123-4567 ext. 103</p>
+              <p className={styles.contact}>+91 8793804551</p>
             </div>
           </div>
         </section>

@@ -80,3 +80,26 @@
   align-items: center;
   gap: 5px;
 }
+
+/* Add to ProjectCard.module.css */
+.completion {
+  margin-top: 15px;
+}
+
+.completionBar {
+  height: 6px;
+  background: #e9ecef;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.completionFill {
+  height: 100%;
+  border-radius: 3px;
+  background: #2ecc71; /* Green for completion */
+  transition: width 0.5s ease;
+}
+
+.status.completed {
+  background-color: #2ecc71; /* Green for completed status */
+}
