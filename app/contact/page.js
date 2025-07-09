@@ -95,7 +95,7 @@ export default function ContactPage() {
             </div>
             <div className={styles.infoCard}>
               <h3>🕒 Hours</h3>
-              <p>Mon–Fri: 8am–6pm<br />Sat: 9am–2pm<br />Sun: Closed</p>
+              <p>All Day: 10am–6pm<br /></p>
             </div>
           </div>
 
@@ -227,16 +227,16 @@ export default function ContactPage() {
                 <div className={styles.photoPlaceholder}>👨‍💼</div>
               </div>
               <h3>Contact Person 1</h3>
-              <p className={styles.position}>Project Manager</p>
+              <p className={styles.position}>Proprietor 1</p>
               <p className={styles.contact}>+91 8805763609</p>
             </div>
 
             <div className={styles.teamMember}>
               <div className={styles.memberPhoto}>
-                <div className={styles.photoPlaceholder}>👩‍💼</div>
+                <div className={styles.photoPlaceholder}>👨‍💼</div>
               </div>
               <h3>Contact Person 2</h3>
-              <p className={styles.position}>Sales Director</p>
+              <p className={styles.position}>Proprietor 1</p>
               <p className={styles.contact}>+91 8793804551</p>
             </div>
           </div>

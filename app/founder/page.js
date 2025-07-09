@@ -14,7 +14,7 @@ export default function AboutFounder() {
           <div className={styles.heroContent}>
             <div className={styles.founderImage}>
               <Image
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop"
+                src="https://drive.google.com/uc?export=view&id=15ZZGbD4cJsyPQqzPHfTdboowZ45Mml60"
                 alt="Mr. Milind Subhedar"
                 width={400}
                 height={500}
@@ -33,7 +33,7 @@ export default function AboutFounder() {
         <section className={styles.biography}>
           <div className={styles.bioContent}>
             <div className={styles.story}>
-              <h2>The Story Behind BuildMaster</h2>
+              <h2>The Story Behind Siddharth Constructions</h2>
               <p>
                 With a vision rooted in quality and a passion for purposeful development, Mr. Milind Subhedar has been an active force in Goa’s real estate industry since 2018. He began his journey as the founder of M2K Technologies, where he successfully led the development of Niel’s Residency, completed in 2012. This marked the beginning of a series of well-executed residential projects across the state.
               </p>
@@ -73,38 +73,26 @@ export default function AboutFounder() {
           </div>
         </section>
 
-        <section className={styles.qualifications}>
-          <h2>Education & Certifications</h2>
-          <div className={styles.qualificationsGrid}>
-            <div className={styles.qualification}>
-              <h3>🎓 Education</h3>
-              <ul>
-                <li>Master of Science in Construction Management - State University (2002)</li>
-                <li>Bachelor of Science in Civil Engineering - Tech Institute (2000)</li>
-              </ul>
-            </div>
-            
-            <div className={styles.qualification}>
-              <h3>📜 Certifications</h3>
-              <ul>
-                <li>Licensed Professional Engineer (PE)</li>
-                <li>Project Management Professional (PMP)</li>
-                <li>LEED Accredited Professional</li>
-                <li>OSHA 30-Hour Construction Safety</li>
-              </ul>
-            </div>
-            
-            <div className={styles.qualification}>
-              <h3>🏆 Awards & Recognition</h3>
-              <ul>
-                <li>Construction Industry Excellence Award (2023)</li>
-                <li>Green Building Leadership Award (2022)</li>
-                <li>Business Leader of the Year (2021)</li>
-                <li>Safety Excellence Award (2020)</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+<section className={styles.qualifications}>
+  <h2>Education & Certifications</h2>
+  <div className={styles.qualificationsGrid}>
+    <div className={styles.qualification}>
+      <h3>🎓 Education</h3>
+      <ul>
+        <li>Diploma in Electrical Engineering</li>
+        <li>Govt Polytechnic Panaji</li>
+      </ul>
+    </div>
+    
+    <div className={styles.qualification}>
+      <h3>📜 Professional Memberships</h3>
+      <ul>
+        <li>Member, Lions Club of Sancoale</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
 
         <section className={styles.philosophy}>
           <h2>Leadership Philosophy</h2>
@@ -117,7 +105,7 @@ export default function AboutFounder() {
                 establishing relationships built on trust and mutual respect."
               </p>
               <p>
-                "At BuildMaster, we don't just construct buildings; we craft experiences. Every project 
+                "At Siddharth Constructions, we don't just construct buildings; we craft experiences. Every project 
                 is an opportunity to exceed expectations, push boundaries, and set new standards in 
                 the industry. My role is to ensure that our team has the resources, support, and 
                 inspiration needed to deliver exceptional results."

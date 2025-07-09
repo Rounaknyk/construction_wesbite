@@ -5,8 +5,11 @@ export const projects = [
     title: 'Crescent Lake',
     location: 'Chicalim',
     description: 'Nestled beside a natural water body in the heart of Chicalim, Crescent Lake is an upscale residential project that blends tranquillity with accessibility.',
-    image: 'https://drive.google.com/uc?export=view&id=1Q1iLnT-2PvKLGiUT8k95EbRRz7wRzg0i',
-    status: 'ongoing',
+    image: [
+      'https://drive.google.com/uc?export=view&id=1Q1iLnT-2PvKLGiUT8k95EbRRz7wRzg0i',
+      'https://drive.google.com/uc?export=view&id=1Ja6KqU8VDjGoo3fZF_tOuU4b_Ez0WstX',
+      'https://drive.google.com/uc?export=view&id=1c5ilyrwZf8lEyn3d3airnxlmP2alH4Ka'
+    ],    status: 'ongoing',
     details: {
       type: 'Residential',
       features: ['Waterfront location', 'Upscale amenities', 'Prime connectivity'],
@@ -18,8 +21,11 @@ export const projects = [
     title: 'Open Sea',
     location: 'Baina',
     description: 'A bold contemporary coastal project offering stunning sea views and modern living spaces that embrace Goa\'s coastal spirit.',
-    image: 'https://drive.google.com/uc?export=view&id=1WAXJdrl-bMHItw-Hl4N0EiRc26T8LlPO',
-    status: 'ongoing',
+    image: [
+      'https://drive.google.com/uc?export=view&id=1Q1iLnT-2PvKLGiUT8k95EbRRz7wRzg0i',
+      'https://drive.google.com/uc?export=view&id=1Ja6KqU8VDjGoo3fZF_tOuU4b_Ez0WstX',
+      'https://drive.google.com/uc?export=view&id=1c5ilyrwZf8lEyn3d3airnxlmP2alH4Ka'
+    ],    status: 'ongoing',
     details: {
       type: 'Residential',
       features: ['Sea views', 'Modern architecture', 'Coastal living'],
@@ -31,8 +37,11 @@ export const projects = [
     title: 'Magnifica',
     location: 'Dabolim',
     description: 'Our debut project that laid the cornerstone of our commitment to quality and integrity in construction.',
-    image: 'https://drive.google.com/uc?export=view&id=1Ja6KqU8VDjGoo3fZF_tOuU4b_Ez0WstX',
-    status: 'completed',
+    image: [
+      'https://drive.google.com/uc?export=view&id=1Q1iLnT-2PvKLGiUT8k95EbRRz7wRzg0i',
+      'https://drive.google.com/uc?export=view&id=1Ja6KqU8VDjGoo3fZF_tOuU4b_Ez0WstX',
+      'https://drive.google.com/uc?export=view&id=1c5ilyrwZf8lEyn3d3airnxlmP2alH4Ka'
+    ],    status: 'completed',
     details: {
       type: 'Residential',
       features: ['Landmark project', 'Quality construction'],
@@ -44,8 +53,11 @@ export const projects = [
     title: 'Villa Del Sol',
     location: 'Bogmalo',
     description: 'Boutique villa project offering privacy, luxury, and Goan charm with personalized attention to detail.',
-    image: 'https://drive.google.com/uc?export=view&id=1c5ilyrwZf8lEyn3d3airnxlmP2alH4Ka',
-    status: 'completed',
+    image: [
+      'https://drive.google.com/uc?export=view&id=1Q1iLnT-2PvKLGiUT8k95EbRRz7wRzg0i',
+      'https://drive.google.com/uc?export=view&id=1Ja6KqU8VDjGoo3fZF_tOuU4b_Ez0WstX',
+      'https://drive.google.com/uc?export=view&id=1c5ilyrwZf8lEyn3d3airnxlmP2alH4Ka'
+    ],    status: 'completed',
     details: {
       type: 'Villas',
       features: ['Private villas', 'Luxury finishes'],
@@ -61,7 +73,11 @@ export const featured = [
     title: 'Crescent Lake',
     location: 'Chicalim',
     description: 'Nestled beside a natural water body in the heart of Chicalim, Crescent Lake is an upscale residential project that blends tranquillity with accessibility.',
-    image: 'https://drive.google.com/uc?export=view&id=1Q1iLnT-2PvKLGiUT8k95EbRRz7wRzg0i',
+    image: [
+      'https://drive.google.com/uc?export=view&id=1Q1iLnT-2PvKLGiUT8k95EbRRz7wRzg0i',
+      'https://drive.google.com/uc?export=view&id=1Ja6KqU8VDjGoo3fZF_tOuU4b_Ez0WstX',
+      'https://drive.google.com/uc?export=view&id=1c5ilyrwZf8lEyn3d3airnxlmP2alH4Ka'
+    ],
     status: 'ongoing',
     details: {
       type: 'Residential',
@@ -74,8 +90,11 @@ export const featured = [
     title: 'Open Sea',
     location: 'Baina',
     description: 'A bold contemporary coastal project offering stunning sea views and modern living spaces that embrace Goa\'s coastal spirit.',
-    image: 'https://drive.google.com/uc?export=view&id=1WAXJdrl-bMHItw-Hl4N0EiRc26T8LlPO',
-    status: 'ongoing',
+    image: [
+      'https://drive.google.com/uc?export=view&id=1Q1iLnT-2PvKLGiUT8k95EbRRz7wRzg0i',
+      'https://drive.google.com/uc?export=view&id=1Q1iLnT-2PvKLGiUT8k95EbRRz7wRzg0i',
+      'https://drive.google.com/uc?export=view&id=1Q1iLnT-2PvKLGiUT8k95EbRRz7wRzg0i'
+    ],    status: 'ongoing',
     details: {
       type: 'Residential',
       features: ['Sea views', 'Modern architecture', 'Coastal living'],
@@ -87,8 +106,11 @@ export const featured = [
     title: 'Magnifica',
     location: 'Dabolim',
     description: 'Our debut project that laid the cornerstone of our commitment to quality and integrity in construction.',
-    image: 'https://drive.google.com/uc?export=view&id=1Ja6KqU8VDjGoo3fZF_tOuU4b_Ez0WstX',
-    status: 'completed',
+    image: [
+      'https://drive.google.com/uc?export=view&id=1Q1iLnT-2PvKLGiUT8k95EbRRz7wRzg0i',
+      'https://drive.google.com/uc?export=view&id=1Q1iLnT-2PvKLGiUT8k95EbRRz7wRzg0i',
+      'https://drive.google.com/uc?export=view&id=1Q1iLnT-2PvKLGiUT8k95EbRRz7wRzg0i'
+    ],    status: 'completed',
     details: {
       type: 'Residential',
       features: ['Landmark project', 'Quality construction'],
@@ -104,7 +126,6 @@ export const allProjects = [
 ]
 
 export const featuredProjects = featured
-
 
 
 export const gallery = [

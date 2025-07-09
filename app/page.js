@@ -95,6 +95,32 @@ export default function Home() {
         </div>
       </section>
 
+{/* Video section */}
+
+<section className={styles.videoSection}>
+  <h2>Our Videos</h2>
+  <div className={styles.videoGrid}>
+    <div className={styles.videoItem}>
+      <iframe
+        src="https://www.youtube.com/embed/EC33Maj2T9E"
+        title="YouTube video 1"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+    <div className={styles.videoItem}>
+      <iframe
+        src="https://www.youtube.com/embed/th_ejWk0uf8"
+        title="YouTube video 2"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+    {/* Add more video blocks as needed */}
+  </div>
+</section>
+
+
       {/* Stats Section */}
       <section className={`section ${styles.stats}`}>
         <div className="container">

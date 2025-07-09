@@ -28,12 +28,6 @@ export default function ProjectsPage() {
             All Projects
           </button>
           <button 
-            className={`${styles.tab} ${activeTab === 'upcoming' ? styles.active : ''}`}
-            onClick={() => setActiveTab('upcoming')}
-          >
-            Upcoming
-          </button>
-          <button 
             className={`${styles.tab} ${activeTab === 'ongoing' ? styles.active : ''}`}
             onClick={() => setActiveTab('ongoing')}
           >
