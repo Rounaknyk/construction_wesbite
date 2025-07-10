@@ -41,51 +41,15 @@ const galleryImages = [
     alt: 'Modern house construction',
     category: 'Residential'
   },
-  {
-    id: 7,
-    src: 'https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=800&h=600&fit=crop',
-    alt: 'Construction site overview',
-    category: 'Commercial'
-  },
-  {
-    id: 8,
-    src: 'https://images.unsplash.com/photo-1560448205-17d3a46cdfde?w=800&h=600&fit=crop',
-    alt: 'Building facade',
-    category: 'Commercial'
-  },
-  {
-    id: 9,
-    src: 'https://images.unsplash.com/photo-1560448205-17d3a46cdfde?w=800&h=600&fit=crop',
-    alt: 'Construction equipment',
-    category: 'Equipment'
-  },
-  {
-    id: 10,
-    src: 'https://images.unsplash.com/photo-1560448205-17d3a46cdfde?w=800&h=600&fit=crop',
-    alt: 'Award ceremony',
-    category: 'Awards'
-  },
-  {
-    id: 11,
-    src: 'https://images.unsplash.com/photo-1560448205-17d3a46cdfde?w=800&h=600&fit=crop',
-    alt: 'Construction blueprint',
-    category: 'Planning'
-  },
-  {
-    id: 12,
-    src: 'https://images.unsplash.com/photo-1560448205-17d3a46cdfde?w=800&h=600&fit=crop',
-    alt: 'Project completion celebration',
-    category: 'Milestones'
-  }
 ]
 
-const categories = ['All', ...new Set(galleryImages.map(img => img.category))]
+const categories = ['Gallery Photos']
 
 export default function Gallery() {
-  const [selectedCategory, setSelectedCategory] = useState('All')
+  const [selectedCategory, setSelectedCategory] = useState('Gallery Photos')
   const [selectedImage, setSelectedImage] = useState(null)
 
-  const filteredImages = selectedCategory === 'All'
+  const filteredImages = selectedCategory === 'Gallery Photos'
     ? galleryImages
     : galleryImages.filter(img => img.category === selectedCategory)
 

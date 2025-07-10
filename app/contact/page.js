@@ -94,6 +94,20 @@ export default function ContactPage() {
               <p>siddharthconstructions01@gmail.com<br /></p>
             </div>
             <div className={styles.infoCard}>
+
+    <h3>📱 Instagram</h3>
+    <p>
+      <a 
+        href="https://www.instagram.com/_siddharth_constructions_?igsh=MWM5eG14a2s0c2wxYQ==" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className={styles.socialLink}
+      >
+        @_siddharth_constructions_
+      </a>
+    </p>
+  </div>
+            <div className={styles.infoCard}>
               <h3>🕒 Hours</h3>
               <p>All Day: 10am–6pm<br /></p>
             </div>
@@ -115,7 +129,7 @@ export default function ContactPage() {
             ) : (
               <form ref={formRef} onSubmit={handleSubmit}>
                 <div className={styles.formGroup}>
-                  <label htmlFor="name">Full Name *</label>
+                  <label htmlFor="name">Full Name</label>
                   <input
                     type="text"
                     id="name"
@@ -127,7 +141,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className={styles.formGroup}>
-                  <label htmlFor="email">Email Address *</label>
+                  <label htmlFor="email">Email Address</label>
                   <input
                     type="email"
                     id="email"
@@ -150,7 +164,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className={styles.formGroup}>
-                  <label htmlFor="subject">Subject *</label>
+                  <label htmlFor="subject">Subject</label>
                   <select
                     id="subject"
                     name="subject"
@@ -168,7 +182,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className={styles.formGroup}>
-                  <label htmlFor="message">Message *</label>
+                  <label htmlFor="message">Message</label>
                   <textarea
                     id="message"
                     name="message"
