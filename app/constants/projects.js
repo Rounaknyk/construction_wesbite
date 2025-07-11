@@ -20,17 +20,17 @@ export const projects = [
     gallery: [
       {
         id: 1,
-        src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c',
+        src: 'https://drive.google.com/uc?export=view&id=1Q1iLnT-2PvKLGiUT8k95EbRRz7wRzg0i',
         alt: 'Crescent Lake exterior view'
       },
       {
         id: 2,
-        src: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750',
+        src: 'https://drive.google.com/uc?export=view&id=1Q1iLnT-2PvKLGiUT8k95EbRRz7wRzg0i',
         alt: 'Crescent Lake lobby area'
       },
       {
         id: 3,
-        src: 'https://images.unsplash.com/photo-1551190822-a9333d879b1f',
+        src: 'https://drive.google.com/uc?export=view&id=1Q1iLnT-2PvKLGiUT8k95EbRRz7wRzg0i',
         alt: 'Crescent Lake construction progress'
       }
     ],
@@ -57,12 +57,12 @@ export const projects = [
             gallery: [
       {
         id: 1,
-        src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c',
+        src: 'https://drive.google.com/uc?export=view&id=1Ja6KqU8VDjGoo3fZF_tOuU4b_Ez0WstX',
         alt: 'Crescent Lake exterior view'
       },
       {
         id: 2,
-        src: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750',
+        src: 'https://drive.google.com/uc?export=view&id=1Ja6KqU8VDjGoo3fZF_tOuU4b_Ez0WstX',
         alt: 'Crescent Lake lobby area'
       },
       {
@@ -95,7 +95,7 @@ export const projects = [
             gallery: [
       {
         id: 1,
-        src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c',
+        src: 'https://drive.google.com/uc?export=view&id=1c5ilyrwZf8lEyn3d3airnxlmP2alH4Ka',
         alt: 'Crescent Lake exterior view'
       },
       {
@@ -105,7 +105,7 @@ export const projects = [
       },
       {
         id: 3,
-        src: 'https://images.unsplash.com/photo-1551190822-a9333d879b1f',
+        src: 'https://drive.google.com/uc?export=view&id=1c5ilyrwZf8lEyn3d3airnxlmP2alH4Ka',
         alt: 'Crescent Lake construction progress'
       }
     ],
