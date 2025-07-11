@@ -24,7 +24,7 @@ export default function Header() {
       <div className={styles.container}>
         <Link href="/" className={styles.logo} onClick={closeMenu}>
           <Image 
-            src="/logo.png" 
+            src="/logo23.png" 
             alt="Siddharth Constructions Logo" 
             width={48} 
             height={48}
