@@ -74,7 +74,7 @@ export default function ProjectCard({ project, showStatus = false, showCompletio
           {showStatus && (
             <span className={`${styles.status} ${styles[project.status]}`}>
               {project.status === 'upcoming' ? 'Upcoming' : 
-               project.status === 'ongoing' ? 'In Progress' : 'Completed'}
+               project.status === 'ongoing' ? 'Ongoing' : 'Completed'}
             </span>
           )}
         </div>
@@ -95,8 +95,11 @@ export default function ProjectCard({ project, showStatus = false, showCompletio
               <span>{project.completion} complete</span>
             </div>
           )}
+          
         </div>
       </div>
+
+      
 
       {/* Project Details Modal */}
       {isModalOpen && (
@@ -182,11 +185,58 @@ export default function ProjectCard({ project, showStatus = false, showCompletio
                   <h4>Status</h4>
                   <p className={`${styles.statusBadge} ${styles[project.status]}`}>
                     {project.status === 'upcoming' ? 'Upcoming' : 
-                     project.status === 'ongoing' ? 'In Progress' : 'Completed'}
+                     project.status === 'ongoing' ? 'Ongoing' : 'Completed'}
                   </p>
                 </div>
+
+              <div className={styles.specItem}>
+              <h4>Availability</h4>
+              <p className={`${styles.statusBadge} ${
+                project.availability === 'available' ? styles.available : styles.notAvailable
+              }`}>
+                {project.availability === 'available' ? 'Available' : 'Not Available'}
+              </p>
+            </div>
               </div>
             </div>
+  
+                      {project.brochure && (
+            <a 
+              href={project.brochure}
+              download
+              className={styles.downloadBtn}
+              onClick={(e) => e.stopPropagation()} // Prevent modal from closing
+            >
+              Download Brochure
+            </a>
+            
+          )}
+
+
+            <button 
+      className={styles.viewGalleryBtn}
+      onClick={(e) => {
+        e.stopPropagation();
+        window.location.href = `/gallery?project=${project.id}`;
+      }}
+    >
+      View in Gallery
+    </button>
+
+
+            <section className={styles.mapSection}>
+          <div className={styles.mapContainer}>
+            <iframe
+              src={`https://www.google.com/maps?q=${project.lat},${project.lng}&z=18&output=embed`}
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              title="Siddharth Constructions Location"
+            ></iframe>
+          </div>
+        </section>
           </div>
         </div>
       )}

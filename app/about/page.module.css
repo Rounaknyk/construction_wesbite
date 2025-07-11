@@ -256,3 +256,126 @@
     font-size: 2rem;
   }
 }
+
+/* Team Section */
+.team {
+  margin: 80px 0;
+}
+
+.team h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.teamSubtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin-bottom: 60px;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.teamCard {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.teamCard:hover {
+  transform: translateY(-5px);
+}
+
+.teamPhoto {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.teamImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.teamCard:hover .teamImage {
+  transform: scale(1.05);
+}
+
+.teamInfo {
+  padding: 25px;
+}
+
+.teamInfo h3 {
+  color: #2c3e50;
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+}
+
+.teamRole {
+  color: #e74c3c;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.teamBio {
+  color: #7f8c8d;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .teamPhoto {
+    height: 250px;
+  }
+}
+
+/* Add to your page.module.css */
+@keyframes countUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.achievementCard h3 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  animation: countUp 0.5s ease-out forwards;
+}
+
+/* Optional pulse animation for counting numbers */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.achievementCard h3 span {
+  display: inline-block;
+  animation: pulse 0.5s ease infinite;
+}

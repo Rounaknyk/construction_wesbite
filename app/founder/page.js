@@ -23,9 +23,6 @@ export default function AboutFounder() {
             <div className={styles.founderInfo}>
               <h1>Mr. Milind Subhedar</h1>
               <p className={styles.title}>Founder & CEO</p>
-              <p className={styles.subtitle}>
-                "With a vision rooted in quality and a passion for purposeful development"
-              </p>
             </div>
           </div>
         </section>
@@ -35,7 +32,7 @@ export default function AboutFounder() {
             <div className={styles.story}>
               <h2>The Story Behind Siddharth Constructions</h2>
               <p>
-                With a vision rooted in quality and a passion for purposeful development, Mr. Milind Subhedar has been an active force in Goa’s real estate industry since 2018. He began his journey as the founder of M2K Technologies, where he successfully led the development of Niel’s Residency, completed in 2012. This marked the beginning of a series of well-executed residential projects across the state.
+                With a vision rooted in quality and a passion for purposeful development, Mr. Milind Subhedar has been an active force in Goa’s real estate industry since 2007. He began his journey as the founder of M2K Technologies, where he successfully led the development of Niel’s Residency, completed in 2012. This marked the beginning of a series of well-executed residential projects across the state.
               </p>
               <p>
                 Under the M2K banner, Milind spearheaded several landmark developments including M2K Banyan (Phase 1, 2 & 3), Sharda Enclave, and M2K Classic — projects that have earned him a reputation for trust, timely delivery, and uncompromised quality.
@@ -94,7 +91,7 @@ export default function AboutFounder() {
   </div>
 </section>
 
-        <section className={styles.philosophy}>
+        {/* <section className={styles.philosophy}>
           <h2>Leadership Philosophy</h2>
           <div className={styles.philosophyContent}>
             <div className={styles.philosophyText}>
@@ -123,7 +120,7 @@ export default function AboutFounder() {
               </ul>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className={styles.personal}>
           <h2>Beyond Construction</h2>

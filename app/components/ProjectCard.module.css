@@ -407,6 +407,14 @@
   margin: 0;
 }
 
+.available {
+  background-color: #2ecc71;
+}
+
+.notAvailable {
+  background-color: #95a5a6;
+}
+
 .statusBadge {
   display: inline-block;
   padding: 4px 10px;
@@ -414,6 +422,7 @@
   font-size: 0.85rem;
   font-weight: 600;
   color: white;
+  text-transform: capitalize;
 }
 
 @media (max-width: 768px) {
@@ -442,4 +451,68 @@
   .modalSpecs {
     grid-template-columns: 1fr;
   }
+}
+
+.mapSection {
+  padding: 60px 0;
+}
+
+.mapSection h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.mapContainer {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.downloadBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 15px;
+  right: 60px; /* Adjust based on your close button position */
+  z-index: 1;
+}
+
+.downloadBtn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.downloadBtn:active {
+  transform: translateY(0);
+}
+
+/* If you want to add an icon */
+.downloadBtn::before {
+  content: "↓";
+  font-size: 1.1em;
+}
+
+.viewGalleryBtn {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.viewGalleryBtn:hover {
+  background: #2980b9;
 }

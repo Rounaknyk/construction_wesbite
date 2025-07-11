@@ -1,21 +1,59 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState, useEffect } from 'react'
 import ProjectCard from './components/ProjectCard'
 import styles from './page.module.css'
 import {featuredProjects} from './constants/projects'
 import { projectsCompleted, yearsOfExperience, teamMembers } from './constants/basic'
+import Counter from './components/Counter'
 
 export default function Home() {
+  const [heroBgIndex, setHeroBgIndex] = useState(0)
+  const [servicesBgIndex, setServicesBgIndex] = useState(0)
+
+  const heroBgImages = [
+    'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80', // Goa beach
+    'https://images.unsplash.com/photo-1566438480900-0609be27a4be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2094&q=80', // Palm trees
+    'https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1968&q=80', // Goa sunset
+  ]
+
+  const servicesBgImages = [
+    'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80', // Beach with palms
+    'https://images.unsplash.com/photo-1470114716159-e389f8712fda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80', // Forest view
+    'https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1975&q=80', // Nature path
+  ]
+
+  useEffect(() => {
+    const heroInterval = setInterval(() => {
+      setHeroBgIndex((prev) => (prev + 1) % heroBgImages.length)
+    }, 5000)
+
+    const servicesInterval = setInterval(() => {
+      setServicesBgIndex((prev) => (prev + 1) % servicesBgImages.length)
+    }, 6000)
+
+    return () => {
+      clearInterval(heroInterval)
+      clearInterval(servicesInterval)
+    }
+  }, [])
+
   return (
     <div className={styles.homepage}>
       {/* Hero Section */}
-      <section className={styles.hero}>
+      <section 
+        className={styles.hero} 
+        style={{ backgroundImage: `url(${heroBgImages[heroBgIndex]})` }}
+      >
+        <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
           <h1>Siddharth Constructions</h1>
           <p className={styles.tagline}>Building Tomorrow, Today</p>
           <p className={styles.description}>
             We are a leading construction company committed to delivering exceptional quality 
-            and innovative solutions for residential and commercial projects.
+            and innovative solutions for residential and commercial projects in Goa.
           </p>
           <div className={styles.cta}>
             <Link href="/projects/" className="btn">
@@ -26,22 +64,17 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className={styles.heroImage}>
-          <Image
-            src="https://images.unsplash.com/photo-1541976590-713941681591?w=600&h=400&fit=crop"
-            alt="Construction site"
-            width={600}
-            height={400}
-            priority
-          />
-        </div>
       </section>
 
       {/* Services Section */}
-      <section className="section">
+      <section 
+        className={styles.servicesSection}
+        style={{ backgroundImage: `url(${servicesBgImages[servicesBgIndex]})` }}
+      >
+        <div className={styles.servicesOverlay}></div>
         <div className="container">
-          <h2 className="section-title">Our Services</h2>
-          <p className="section-subtitle">
+          <h2 className={styles.sectionTitle}>Our Services</h2>
+          <p className={styles.sectionSubtitle}>
             We provide comprehensive construction services with a focus on quality, safety, and timely delivery.
           </p>
           
@@ -121,29 +154,29 @@ export default function Home() {
 </section>
 
 
-      {/* Stats Section */}
-      <section className={`section ${styles.stats}`}>
-        <div className="container">
-          <div className={styles.statsGrid}>
-            <div className={styles.statCard}>
-              <h3>{projectsCompleted-1}+</h3>
-              <p>Projects Completed</p>
-            </div>
-            <div className={styles.statCard}>
-              <h3>{yearsOfExperience}+</h3>
-              <p>Years Experience</p>
-            </div>
-            <div className={styles.statCard}>
-              <h3>{teamMembers-1}+</h3>
-              <p>Expert Team Members</p>
-            </div>
-            <div className={styles.statCard}>
-              <h3>100%</h3>
-              <p>Client Satisfaction</p>
-            </div>
-          </div>
-        </div>
-      </section>
+ {/* Stats Section */}
+<section className={`section ${styles.stats}`}>
+  <div className="container">
+    <div className={styles.statsGrid}>
+      <div className={styles.statCard}>
+        <h3><Counter value={projectsCompleted-1} duration={600} /></h3>
+        <p>Projects Completed</p>
+      </div>
+      <div className={styles.statCard}>
+        <h3><Counter value={yearsOfExperience} duration={600} /></h3>
+        <p>Years Experience</p>
+      </div>
+      <div className={styles.statCard}>
+        <h3><Counter value={teamMembers-1} duration={600} /></h3>
+        <p>Expert Team Members</p>
+      </div>
+      <div className={styles.statCard}>
+        <h3><Counter value={100} duration={1500} /></h3>
+        <p>Client Satisfaction</p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* CTA Section */}
       <section className={styles.ctaSection}>

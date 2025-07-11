@@ -235,3 +235,34 @@
   font-size: 1.2rem;
   cursor: pointer;
 }
+
+/* Add these new styles to your gallery/page.module.css */
+.projectTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 30px 0;
+  justify-content: center;
+}
+
+.projectTab {
+  padding: 10px 20px;
+  background: #f8f9fa;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.projectTab:hover {
+  background: #e9ecef;
+}
+
+.projectTab.active {
+  background: #e74c3c;
+  color: white;
+}
+
+/* Keep all your existing gallery styles */

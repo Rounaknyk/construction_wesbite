@@ -33,14 +33,14 @@ export default function Footer() {
           
           <div className={styles.footerSection}>
             <h4>Contact Info</h4>
-            <p>📍 Address: 102, first floor, prime elite building, Near hotel Urvashi, Vasco da Gama, Goa- 403802</p>
+            <p>📍 Address: 102, First floor, Prime Elite Building, Near Hotel Urvashi, Vasco da Gama, Goa- 403802</p>
             <p>📞 (+91) 8805763609</p>
             <p>✉️ siddharthconstructions01@gmail.com</p>
           </div>
         </div>
         
         <div className={styles.footerBottom}>
-          <p>&copy; 2024 Siddharth Constructions. All rights reserved.</p>
+          <p>&copy; Siddharth Constructions. All rights reserved.</p>
         </div>
       </div>
     </footer>

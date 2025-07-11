@@ -30,10 +30,9 @@ export default function Header() {
             height={48}
             className={styles.logoImage}
           />
-          <div className={styles.logoText}>
-            <h1>Siddharth</h1>
-            <p>Constructions</p>
-          </div>
+          {/* <div className={styles.logoText}>
+            <h1>Siddharth Constructions</h1>
+          </div> */}
         </Link>
     
         <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>

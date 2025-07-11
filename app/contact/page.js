@@ -81,13 +81,13 @@ export default function ContactPage() {
             <h2>Our Office</h2>
             <div className={styles.infoCard}>
               <h3>📍 Address</h3>
-              <p>Address: 102, first floor, prime elite building<br />Near hotel Urvashi<br />Vasco da Gama, Goa- 403802</p>
+            <p>📍 Address: 102, First floor, Prime Elite Building, Near Hotel Urvashi, Vasco da Gama, Goa- 403802</p>
             </div>
             <div className={styles.infoCard}>
               <h3>📞 Phone</h3>
-              <p>Proprietor 1: +91 8805763609</p>
+              <p>Milind Subhedar: +91 8805763609</p>
               <br />
-              <p>Proprietor 2: +91 8793804551</p>
+              <p>Neil Subhedar: +91 8793804551</p>
             </div>
             <div className={styles.infoCard}>
               <h3>✉️ Email</h3>
@@ -109,7 +109,7 @@ export default function ContactPage() {
   </div>
             <div className={styles.infoCard}>
               <h3>🕒 Hours</h3>
-              <p>All Day: 10am–6pm<br /></p>
+              <p>10am–6pm<br /></p>
             </div>
           </div>
 
@@ -233,28 +233,6 @@ export default function ContactPage() {
           </div>
         </section>
 
-        <section className={styles.teamSection}>
-          <h2>Key Contacts</h2>
-          <div className={styles.teamGrid}>
-            <div className={styles.teamMember}>
-              <div className={styles.memberPhoto}>
-                <div className={styles.photoPlaceholder}>👨‍💼</div>
-              </div>
-              <h3>Contact Person 1</h3>
-              <p className={styles.position}>Proprietor 1</p>
-              <p className={styles.contact}>+91 8805763609</p>
-            </div>
-
-            <div className={styles.teamMember}>
-              <div className={styles.memberPhoto}>
-                <div className={styles.photoPlaceholder}>👨‍💼</div>
-              </div>
-              <h3>Contact Person 2</h3>
-              <p className={styles.position}>Proprietor 1</p>
-              <p className={styles.contact}>+91 8793804551</p>
-            </div>
-          </div>
-        </section>
       </div>
     </div>
   )

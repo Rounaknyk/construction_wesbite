@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import { projectsCompleted, yearsOfExperience, teamMembers } from '../constants/basic'
+import {teamMembersDetails} from '../constants/basic';
+import Counter from '../components/Counter'
 
 export const metadata = {
   title: 'About Siddharth Constructions - Our Company Story',
@@ -84,23 +86,49 @@ We strive to blend modern design with thoughtful functionality, ensuring that ev
         </section>
 
 
-        <section className={styles.achievements}>
-          <h2>Our Achievements</h2>
-          <div className={styles.achievementsGrid}>
-            <div className={styles.achievementCard}>
-              <h3>{projectsCompleted - 1}+</h3>
-              <p>Successful Projects</p>
+<section className={styles.achievements}>
+  <h2>Our Achievements</h2>
+  <div className={styles.achievementsGrid}>
+    <div className={styles.achievementCard}>
+      <h3><Counter value={projectsCompleted - 1} duration={600} /></h3>
+      <p>Successful Projects</p>
+    </div>
+    <div className={styles.achievementCard}>
+      <h3><Counter value={yearsOfExperience} duration={600} /></h3>
+      <p>Years in Business</p>
+    </div>
+    <div className={styles.achievementCard}>
+      <h3><Counter value={teamMembers - 1} duration={600} /></h3>
+      <p>Professional Team</p>
+    </div>
+  </div>
+</section>
+
+        <section className={styles.team}>
+        <h2>Our Team</h2>
+        <p className={styles.teamSubtitle}>Meet the dedicated professionals behind our success</p>
+        
+        <div className={styles.teamGrid}>
+          {teamMembersDetails.map((member) => (
+            <div key={member.id} className={styles.teamCard}>
+              <div className={styles.teamPhoto}>
+                <Image
+                  src={member.photo}
+                  alt={`${member.name}, ${member.role}`}
+                  width={300}
+                  height={300}
+                  className={styles.teamImage}
+                />
+              </div>
+              <div className={styles.teamInfo}>
+                <h3>{member.name}</h3>
+                <p className={styles.teamRole}>{member.role}</p>
+                <p className={styles.teamBio}>{member.bio}</p>
+              </div>
             </div>
-            <div className={styles.achievementCard}>
-              <h3>{yearsOfExperience}+</h3>
-              <p>Years in Business</p>
-            </div>
-            <div className={styles.achievementCard}>
-              <h3>{teamMembers - 1}+</h3>
-              <p>Professional Team</p>
-            </div>
-          </div>
-        </section>
+          ))}
+        </div>
+      </section>
 
         <section className={styles.whyChooseUs}>
           <h2>Why Choose Siddharth Constructions?</h2>
