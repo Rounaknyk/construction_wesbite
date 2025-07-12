@@ -190,8 +190,7 @@ export default function ProjectCard({ project, showStatus = false, showCompletio
                 </div>
 
               <div className={styles.specItem}>
-              <h4>Availability</h4>
-              <p className={`${styles.statusBadge} ${
+              <p className={`${styles.statusBadge2} ${
                 project.availability === 'available' ? styles.available : styles.notAvailable
               }`}>
                 {project.availability === 'available' ? 'Available' : 'Not Available'}
