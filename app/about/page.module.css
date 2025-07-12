@@ -1,7 +1,8 @@
 .aboutPage {
-  padding-top: 70px;
+  padding-top: 10px;
 }
 
+/* Hero Section */
 .hero {
   text-align: center;
   padding: 80px 0;
@@ -20,6 +21,7 @@
   opacity: 0.9;
 }
 
+/* Mission Section */
 .mission {
   margin-bottom: 80px;
 }
@@ -52,209 +54,117 @@
 .imageContainer img {
   width: 100%;
   height: auto;
+  display: block;
+}
+/* Updated Values Section CSS */
+.values {
+  position: relative;
+  margin-bottom: 80px;
+  overflow: hidden;
+  min-height: 800px;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  width: 100vw;
 }
 
-.values {
-  margin-bottom: 80px;
+.valuesBackground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.valueBgImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.valueBgImage.active {
+  opacity: 0.3;
+}
+
+.valuesOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(44, 62, 80, 0.6), rgba(52, 73, 94, 0.5));
+  z-index: 2;
+}
+
+.valuesContent {
+  position: relative;
+  z-index: 3;
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .values h2 {
   text-align: center;
-  font-size: 2.5rem;
-  color: #2c3e50;
+  font-size: 2.8rem;
+  color: white;
   margin-bottom: 60px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  font-weight: 700;
 }
 
 .valuesGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .valueCard {
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  border-radius: 12px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .valueCard:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  background: rgba(255, 255, 255, 0.98);
 }
 
 .valueIcon {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.valueCard:hover .valueIcon {
+  transform: scale(1.1);
 }
 
 .valueCard h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #2c3e50;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  font-weight: 600;
 }
 
 .valueCard p {
-  color: #7f8c8d;
+  color: #5d6d7e;
   line-height: 1.6;
-}
-
-.services {
-  background-color: #f8f9fa;
-  padding: 80px 0;
-  margin-bottom: 80px;
-}
-
-.services h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #2c3e50;
-  margin-bottom: 60px;
-}
-
-.servicesContent {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
-}
-
-.servicesList {
-  display: grid;
-  gap: 30px;
-}
-
-.serviceCategory h3 {
-  color: #e74c3c;
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-}
-
-.serviceCategory ul {
-  list-style: none;
-}
-
-.serviceCategory li {
-  padding: 8px 0;
-  color: #34495e;
-  border-bottom: 1px solid #ecf0f1;
-}
-
-.serviceCategory li:last-child {
-  border-bottom: none;
-}
-
-.servicesImage {
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-.servicesImage img {
-  width: 100%;
-  height: auto;
-}
-
-.achievements {
-  margin-bottom: 80px;
-}
-
-.achievements h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #2c3e50;
-  margin-bottom: 60px;
-}
-
-.achievementsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
-}
-
-.achievementCard {
-  text-align: center;
-  padding: 30px;
-  background: linear-gradient(135deg, #e74c3c, #c0392b);
-  color: white;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.achievementCard h3 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.achievementCard p {
-  font-size: 1.1rem;
-  opacity: 0.9;
-}
-
-.whyChooseUs h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #2c3e50;
-  margin-bottom: 60px;
-}
-
-.reasonsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-}
-
-.reason {
-  padding: 30px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.reason h3 {
-  color: #2c3e50;
-  margin-bottom: 15px;
-  font-size: 1.3rem;
-}
-
-.reason p {
-  color: #7f8c8d;
-  line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-  
-  .missionContent {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  
-  .servicesContent {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  
-  .valuesGrid {
-    grid-template-columns: 1fr;
-  }
-  
-  .achievementsGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .achievementsGrid {
-    grid-template-columns: 1fr;
-  }
-  
-  .hero h1 {
-    font-size: 2rem;
-  }
+  font-size: 0.9rem;
 }
 
 /* Team Section */
@@ -334,48 +244,188 @@
   font-size: 0.95rem;
 }
 
+/* Why Choose Us Section */
+.whyChooseUs {
+  margin-bottom: 80px;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  width: 100vw;
+}
+
+.whyChooseBg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+}
+
+.whyChooseOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+  z-index: 1;
+}
+
+.whyChooseContent {
+  position: relative;
+  z-index: 2;
+  padding: 80px 20px;
+  color: white;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.whyChooseContent h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 60px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  font-weight: 700;
+}
+
+.reasonsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.reason {
+  background: rgba(255, 255, 255, 0.95);
+  color: #2c3e50;
+  padding: 35px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.reason:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.reason h3 {
+  color: #e74c3c;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.reason p {
+  color: #5d6d7e;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Enhanced Responsive Styles */
 @media (max-width: 768px) {
-  .teamGrid {
-    grid-template-columns: repeat(2, 1fr);
+  .values {
+    min-height: 900px;
+  }
+  
+  .values h2 {
+    font-size: 2.2rem;
+  }
+  
+  .valuesGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .valueCard {
+    padding: 20px;
+  }
+  
+  .whyChooseBg {
+    background-attachment: scroll;
+    min-height: 900px;
+  }
+  
+  .whyChooseContent h2 {
+    font-size: 2.2rem;
+  }
+  
+  .reasonsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
 
 @media (max-width: 480px) {
-  .teamGrid {
+  .values {
+    min-height: 1000px;
+  }
+  
+  .values h2 {
+    font-size: 1.8rem;
+  }
+  
+  .valuesGrid {
     grid-template-columns: 1fr;
   }
   
-  .teamPhoto {
-    height: 250px;
+  .valueCard {
+    padding: 18px;
+  }
+  
+  .whyChooseContent {
+    padding: 60px 20px;
+  }
+  
+  .whyChooseContent h2 {
+    font-size: 1.8rem;
+  }
+  
+  .reasonsGrid {
+    grid-template-columns: 1fr;
   }
 }
 
-/* Add to your page.module.css */
-@keyframes countUp {
-  from {
-    transform: translateY(10px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+
+.achievements {
+  margin-bottom: 80px;
+}
+
+.achievements h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 60px;
+}
+
+.achievementsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.achievementCard {
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .achievementCard h3 {
   font-size: 3rem;
   margin-bottom: 10px;
-  animation: countUp 0.5s ease-out forwards;
 }
 
-/* Optional pulse animation for counting numbers */
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-
-.achievementCard h3 span {
-  display: inline-block;
-  animation: pulse 0.5s ease infinite;
+.achievementCard p {
+  font-size: 1.1rem;
+  opacity: 0.9;
 }

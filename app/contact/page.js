@@ -87,7 +87,7 @@ export default function ContactPage() {
               <h3>📞 Phone</h3>
               <p>Milind Subhedar: +91 8805763609</p>
               <br />
-              <p>Neil Subhedar: +91 8793804551</p>
+              <p>Niel Subhedar: +91 8793804551</p>
             </div>
             <div className={styles.infoCard}>
               <h3>✉️ Email</h3>
@@ -222,7 +222,7 @@ export default function ContactPage() {
           <h2>Our Location</h2>
           <div className={styles.mapContainer}>
             <iframe
-              src="https://www.google.com/maps?q=15.3994046,73.8123676&z=18&output=embed"
+              src="https://www.google.com/maps?q=15.3992906,73.8124926&z=18&output=embed"
               width="100%"
               height="450"
               style={{ border: 0 }}

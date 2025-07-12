@@ -1,18 +1,41 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import styles from './Gallery.module.css'
 import { allProjects } from '../constants/projects'
 import { useSearchParams } from 'next/navigation'
 
+// Add these image URLs (replace with your preferred construction images)
+const sliderImages = [
+  'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&auto=format',
+  'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format',
+  'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1200&auto=format',
+  'https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=1200&auto=format',
+  'https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=1200&auto=format'
+]
+
 export default function Gallery() {
   const searchParams = useSearchParams()
   const [selectedProject, setSelectedProject] = useState(null)
   const [selectedImage, setSelectedImage] = useState(null)
+  const [currentSlide, setCurrentSlide] = useState(0)
+
+  // Auto slide functionality
+  const nextSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev === sliderImages.length - 1 ? 0 : prev + 1))
+  }, [])
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev === 0 ? sliderImages.length - 1 : prev - 1))
+  }
 
   useEffect(() => {
-    // Check for project ID in URL when component mounts
+    const interval = setInterval(nextSlide, 5000)
+    return () => clearInterval(interval)
+  }, [nextSlide])
+
+  useEffect(() => {
     const projectId = searchParams.get('project')
     if (projectId) {
       const project = allProjects.find(p => p.id.toString() === projectId)
@@ -36,6 +59,36 @@ export default function Gallery() {
         <section className={styles.hero}>
           <h1>Project Gallery</h1>
           <p>Explore photos from our construction projects</p>
+        </section>
+
+        {/* Add this Slider section */}
+        <section className={styles.sliderSection}>
+          <div className={styles.sliderContainer}>
+            {sliderImages.map((image, index) => (
+              <div 
+                key={index}
+                className={`${styles.slide} ${index === currentSlide ? styles.active : ''}`}
+                style={{ backgroundImage: `url(${image})` }}
+              >
+                <div className={styles.slideOverlay}></div>
+              </div>
+            ))}
+            <button className={styles.sliderArrowLeft} onClick={prevSlide}>
+              &lt;
+            </button>
+            <button className={styles.sliderArrowRight} onClick={nextSlide}>
+              &gt;
+            </button>
+            <div className={styles.sliderDots}>
+              {sliderImages.map((_, index) => (
+                <button
+                  key={index}
+                  className={`${styles.dot} ${index === currentSlide ? styles.active : ''}`}
+                  onClick={() => setCurrentSlide(index)}
+                />
+              ))}
+            </div>
+          </div>
         </section>
 
         <section className={styles.projectTabs}>

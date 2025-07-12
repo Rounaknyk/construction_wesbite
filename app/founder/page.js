@@ -46,24 +46,16 @@ export default function AboutFounder() {
               <h2>Professional Experience</h2>
               <div className={styles.experienceTimeline}>
                 <div className={styles.timelineItem}>
-                  <div className={styles.year}>2018 - Present</div>
-                  <div className={styles.position}>Founder & CEO</div>
-                  <div className={styles.company}>Siddharth Constructions</div>
-                  <p>Led the company from startup to industry leader, overseeing 150+ successful projects.</p>
+                  <div className={styles.year}>2000-2020</div>
+                  <div className={styles.position}>Founder of Prime Electricals</div>
                 </div>
                 
                 <div className={styles.timelineItem}>
-                  <div className={styles.year}>2005 - 2018</div>
-                  <div className={styles.position}>Senior Project Manager</div>
-                  <div className={styles.company}>Metropolitan Construction Group</div>
-                  <p>Managed large-scale commercial projects worth over $50 million in total value.</p>
+                  <div className={styles.position}>Electrical trader and contractor</div>
                 </div>
-                
-                <div className={styles.timelineItem}>
-                  <div className={styles.year}>2002 - 2005</div>
-                  <div className={styles.position}>Construction Engineer</div>
-                  <div className={styles.company}>Urban Development Corp</div>
-                  <p>Specialized in residential development projects and infrastructure planning.</p>
+
+                 <div className={styles.timelineItem}>
+                  <div className={styles.position}>Handled projects accross Goa</div>
                 </div>
               </div>
             </div>

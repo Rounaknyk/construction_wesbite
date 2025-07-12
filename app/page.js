@@ -49,7 +49,7 @@ export default function Home() {
       >
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
-          <h1>SIDDHARTH CONSTRUCTIONS</h1>
+          <h1>Siddharth Constructions</h1>
           <p className={styles.tagline}>Building Tomorrow, Today</p>
           <p className={styles.description}>
             We are a leading construction company committed to delivering exceptional quality 
@@ -181,7 +181,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className={styles.ctaSection}>
         <div className="container">
-          <h2>Ready to Start Your Project?</h2>
+          <h2>Start constructing your vision with us today.</h2>
           <p>Let's discuss your construction needs and bring your vision to life.</p>
           <Link href="/contact" className="btn">
             Contact Us Today
