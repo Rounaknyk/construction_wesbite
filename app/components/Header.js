@@ -24,10 +24,10 @@ export default function Header() {
       <div className={styles.container}>
         <Link href="/" className={styles.logo} onClick={closeMenu}>
           <Image 
-            src="/logo23.png" 
+            src="/org_logo.png" 
             alt="Siddharth Constructions Logo" 
-            width={48} 
-            height={48}
+            width={64} 
+            height={64}
             className={styles.logoImage}
           />
           {/* <div className={styles.logoText}>

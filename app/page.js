@@ -49,7 +49,7 @@ export default function Home() {
       >
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
-          <h1>Siddharth Constructions</h1>
+          <h1>SIDDHARTH CONSTRUCTIONS</h1>
           <p className={styles.tagline}>Building Tomorrow, Today</p>
           <p className={styles.description}>
             We are a leading construction company committed to delivering exceptional quality 
