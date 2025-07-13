@@ -53,7 +53,7 @@ export default function Home() {
           <h1>Constructions</h1>
           <p className={styles.tagline}>Building Tomorrow, Today</p>
           <p className={styles.description}>
-            We are a leabing construction company committed to delivering exceptional quality 
+            We are a leading construction company committed to delivering exceptional quality 
             and innovative solutions for residential and commercial projects in Goa.
           </p>
           <div className={styles.cta}>
