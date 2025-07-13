@@ -43,7 +43,7 @@
 .heroContent h1 {
   font-family: 'Bropella', serif;
   font-size: 8.5rem;
-  margin: 0 auto 15px; /* Changed margin to auto for horizontal centering */
+  margin: auto; /* Changed margin to auto for horizontal centering */
   color: white;
   font-weight: 800;
   text-shadow: 
