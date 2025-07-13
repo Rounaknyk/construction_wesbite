@@ -49,10 +49,11 @@ export default function Home() {
       >
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
-          <h1>Siddharth Constructions</h1>
+          <h1>Siddharth</h1>
+          <h1>Constructions</h1>
           <p className={styles.tagline}>Building Tomorrow, Today</p>
           <p className={styles.description}>
-            We are a leabing aconstruction company committed to delivering exceptional quality 
+            We are a leabing construction company committed to delivering exceptional quality 
             and innovative solutions for residential and commercial projects in Goa.
           </p>
           <div className={styles.cta}>
