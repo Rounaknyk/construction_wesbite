@@ -32,19 +32,29 @@
 .heroContent {
   position: relative;
   z-index: 2;
-  max-width: 800px;
+  max-width: 80%;
   padding: 40px;
-  background: rgba(0, 0, 0, 0.6);
+  /* background: rgba(0, 0, 0, 0.6);
   border-radius: 15px;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px); */
 }
 
+
 .heroContent h1 {
-  font-family: Montserrat;
-  font-size: 3.5rem;
-  margin-bottom: 15px;
+  font-family: 'Bropella', serif;
+  font-size: 8.5rem;
+  margin: 0 auto 15px; /* Changed margin to auto for horizontal centering */
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 800;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.6),
+    0 0 10px rgba(255, 255, 255, 0.3);
+  letter-spacing: 8px;
+  line-height: 1;
+  text-align: center;
+  width: fit-content; /* Changed from 100% to fit-content */
+  padding: 0 8px; /* Compensates for letter-spacing */
+  transform: translateX(4px); /* Fine-tune visual centering */
 }
 
 .tagline {

@@ -13,7 +13,7 @@ export const projects = [
     details: {
       type: 'Residential',
       features: ['Waterfront location', 'Upscale amenities', 'Prime connectivity'],
-      duration: '24 months'
+      possession: '24 months'
     },
     availability: "available",
     brochure: "https://drive.google.com/uc?export=download&id=19b-ZjylVjnV9TFOeUbku5a6zHcKGb32B",
@@ -50,7 +50,7 @@ export const projects = [
     details: {
       type: 'Residential',
       features: ['Sea views', 'Modern architecture', 'Coastal living'],
-      duration: '30 months'
+      possession: '30 months'
     },
         availability: "available",
             brochure: "https://drive.google.com/uc?export=download&id=1sBVEHH18P9VpK1Z0PA8-F5wgzQRKG1ka",
@@ -88,7 +88,7 @@ export const projects = [
     details: {
       type: 'Residential',
       features: ['Landmark project', 'Quality construction'],
-      year: '2020'
+      year: '2024'
     },
         availability: "unavailable",
             brochure: "https://drive.google.com/uc?export=download&id=124ZWwk-gxLB-bV4qIuDAXtJ0r5nXWCBO",
@@ -126,7 +126,7 @@ export const projects = [
     details: {
       type: 'Villas',
       features: ['Private villas', 'Luxury finishes'],
-      year: '2022'
+      possession: '2022'
     },
         availability: "available",
             brochure: "https://drive.google.com/uc?export=download&id=1vd3aWnq7uW2xSAClnVsoQYD1hce9J96u",

@@ -1,6 +1,4 @@
-
 /*projectcardmodulecss*/
-
 .card {
   background: white;
   border-radius: 10px;
@@ -96,6 +94,10 @@
 
 .ongoing {
   background-color: #e74c3c;
+}
+
+.completed {
+  background-color: #2ecc71;
 }
 
 .status.completed {
@@ -416,7 +418,7 @@
 }
 
 .notAvailable {
-  background-color: #95a5a6;
+  background-color: #cb3232;
 }
 
 .statusBadge {

@@ -167,10 +167,10 @@ export default function ProjectCard({ project, showStatus = false, showCompletio
                   <p>{project.details.type}</p>
                 </div>
                 
-                {project.details.duration && (
+                {project.details.possession && (
                   <div className={styles.specItem}>
-                    <h4>Duration</h4>
-                    <p>{project.details.duration}</p>
+                    <h4>Possession</h4>
+                    <p>{project.details.possession}</p>
                   </div>
                 )}
                 
