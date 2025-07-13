@@ -42,20 +42,29 @@ export default function AboutFounder() {
                 </p>
             </div>
             
+            
             <div className={styles.experience}>
               <h2>Professional Experience</h2>
               <div className={styles.experienceTimeline}>
                 <div className={styles.timelineItem}>
                   <div className={styles.year}>2000-2020</div>
                   <div className={styles.position}>Founder of Prime Electricals</div>
+                                    <div className={styles.position}>Electrical trader and contractor</div>
+                  <div className={styles.position}>Handled projects accross Goa</div>
+
                 </div>
                 
+
                 <div className={styles.timelineItem}>
-                  <div className={styles.position}>Electrical trader and contractor</div>
+                 <div className={styles.year}>2014-2020</div>
+                  <div className={styles.position}>Co-founder of M2K technologies</div>
+
                 </div>
 
                  <div className={styles.timelineItem}>
-                  <div className={styles.position}>Handled projects accross Goa</div>
+                 <div className={styles.year}>2018-2020</div>
+                  <div className={styles.position}>Founder of Siddharth Constructions</div>
+
                 </div>
               </div>
             </div>
@@ -117,7 +126,7 @@ export default function AboutFounder() {
         <section className={styles.personal}>
           <h2>Beyond Construction</h2>
           <div className={styles.personalContent}>
-            <div className={styles.interests}>
+            {/* <div className={styles.interests}>
               <h3>Personal Interests</h3>
               <p>
                 When not overseeing construction projects, Michael enjoys spending time with his family, 
@@ -129,7 +138,7 @@ export default function AboutFounder() {
                 He believes that understanding buildings from an artistic perspective helps him appreciate 
                 the aesthetic aspects of construction that go beyond mere functionality.
               </p>
-            </div>
+            </div> */}
             
             <div className={styles.community}>
               <h3>Community Involvement</h3>

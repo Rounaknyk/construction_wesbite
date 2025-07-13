@@ -288,6 +288,10 @@
   margin-bottom: 15px;
 }
 
+.community{
+ padding: 16px;
+}
+
 .community ul {
   list-style: none;
 }

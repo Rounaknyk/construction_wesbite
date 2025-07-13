@@ -296,7 +296,7 @@
 .reasonsGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  gap: 100px;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -428,4 +428,29 @@
 .achievementCard p {
   font-size: 1.1rem;
   opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .missionContent {
+    grid-template-columns: 1fr; /* Stack vertically */
+    text-align: center;
+  }
+
+  .textContent h2 {
+    font-size: 2rem;
+  }
+
+  .textContent p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .imageContainer {
+    order: -1; /* Show image above text on small screens if preferred */
+  }
+
+  .imageContainer img {
+    width: 100%;
+    height: auto;
+  }
 }
