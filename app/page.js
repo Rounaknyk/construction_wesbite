@@ -52,7 +52,7 @@ export default function Home() {
           <h1>Siddharth Constructions</h1>
           <p className={styles.tagline}>Building Tomorrow, Today</p>
           <p className={styles.description}>
-            We are a leadbing construction company committed to delivering exceptional quality 
+            We are a leabing aconstruction company committed to delivering exceptional quality 
             and innovative solutions for residential and commercial projects in Goa.
           </p>
           <div className={styles.cta}>
