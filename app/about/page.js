@@ -162,7 +162,7 @@ useEffect(() => {
     <div className={styles.whyChooseOverlay}></div>
     <div className={styles.whyChooseContent}>
       <h2>Why Choose Siddharth Constructions?</h2>
-      <div className={styles.reasonsGrid}>
+      <div className={styles.reasonsContainer}>
         <div className={styles.reason}>
           <h3>Proven Track Record</h3>
           <p>Over 15 years of successful project delivery across residential and commercial sectors.</p>

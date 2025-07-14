@@ -5,15 +5,7 @@ import Image from 'next/image'
 import styles from './Gallery.module.css'
 import { allProjects } from '../constants/projects'
 import { useSearchParams } from 'next/navigation'
-
-// Add these image URLs (replace with your preferred construction images)
-const sliderImages = [
-  'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&auto=format',
-  'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format',
-  'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1200&auto=format',
-  'https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=1200&auto=format',
-  'https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=1200&auto=format'
-]
+import {gallery} from '../constants/projects'
 
 export default function Gallery() {
   const searchParams = useSearchParams()
@@ -23,11 +15,11 @@ export default function Gallery() {
 
   // Auto slide functionality
   const nextSlide = useCallback(() => {
-    setCurrentSlide((prev) => (prev === sliderImages.length - 1 ? 0 : prev + 1))
+    setCurrentSlide((prev) => (prev === gallery.length - 1 ? 0 : prev + 1))
   }, [])
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev === 0 ? sliderImages.length - 1 : prev - 1))
+    setCurrentSlide((prev) => (prev === 0 ? gallery.length - 1 : prev - 1))
   }
 
   useEffect(() => {
@@ -62,34 +54,41 @@ export default function Gallery() {
         </section>
 
         {/* Add this Slider section */}
-        <section className={styles.sliderSection}>
-          <div className={styles.sliderContainer}>
-            {sliderImages.map((image, index) => (
-              <div 
-                key={index}
-                className={`${styles.slide} ${index === currentSlide ? styles.active : ''}`}
-                style={{ backgroundImage: `url(${image})` }}
-              >
-                <div className={styles.slideOverlay}></div>
-              </div>
-            ))}
-            <button className={styles.sliderArrowLeft} onClick={prevSlide}>
-              &lt;
-            </button>
-            <button className={styles.sliderArrowRight} onClick={nextSlide}>
-              &gt;
-            </button>
-            <div className={styles.sliderDots}>
-              {sliderImages.map((_, index) => (
-                <button
-                  key={index}
-                  className={`${styles.dot} ${index === currentSlide ? styles.active : ''}`}
-                  onClick={() => setCurrentSlide(index)}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
+    <section className={styles.sliderSection}>
+  <div className={styles.sliderContainer}>
+    {gallery.map((image, index) => (
+      <div 
+        key={index}
+        className={`${styles.slide} ${index === currentSlide ? styles.active : ''}`}
+      >
+        <Image
+          src={image.image}
+          alt={`Slider image ${index + 1}`}
+          fill
+          className={styles.slideImage}
+          priority={index === 0} // Only preload first image
+        />
+        <div className={styles.slideOverlay}></div>
+      </div>
+    ))}
+    <button className={styles.sliderArrowLeft} onClick={prevSlide}>
+      &lt;
+    </button>
+    <button className={styles.sliderArrowRight} onClick={nextSlide}>
+      &gt;
+    </button>
+    <div className={styles.sliderDots}>
+      {gallery.map((_, index) => (
+        <button
+          key={index}
+          className={`${styles.dot} ${index === currentSlide ? styles.active : ''}`}
+          onClick={() => setCurrentSlide(index)}
+        />
+      ))}
+    </div>
+  </div>
+</section>
+
 
         <section className={styles.projectTabs}>
           {allProjects.map(project => (
