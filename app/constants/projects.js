@@ -6,14 +6,10 @@ export const projects = [
     location: 'Chicalim',
     description: 'Nestled beside a natural water body in the heart of Chicalim, Crescent Lake is an upscale residential project that blends tranquillity with accessibility.',
     image: [
-      'https://drive.google.com/uc?export=view&id=1zloHIM1_-maW9npS34vHvyWS_Qku6XSE',
-      'https://drive.google.com/uc?export=view&id=1xBoGZsD4cDLVj2lx6F8jFe7tglek5E7Y',
-      'https://drive.google.com/uc?export=view&id=1R9N-XTXZQp-qyZbOwt26ekUjxutdyXjg',
-      'https://drive.google.com/uc?export=view&id=1cUQZ4u-_TRXxAsYcP4nkSYJP2HXZIzaj',
-      'https://drive.google.com/uc?export=view&id=1kaMB6WA9yDXPaKQXfUao59D5DWlgB00o',
-      'https://drive.google.com/uc?export=view&id=1NOjkuMDs6xumNKywFcz0ZW7TmWMFScMy',
-      'https://drive.google.com/uc?export=view&id=1EUqzf4beEcvrYNAYWKqpHrP73Vjm0mw_',
-      'https://drive.google.com/uc?export=view&id=12yf-cUJtF2gZXLiHKaHZJ8fBqrPH8RSy',
+      'https://drive.google.com/uc?export=view&id=1GpaOoWXCNznOdC26353aogXxhfOjGjSB',
+      'https://drive.google.com/uc?export=view&id=1LXG1OoF68R76z15b6idRpvQjgcU4fcOH',
+      'https://drive.google.com/uc?export=view&id=1Nsah8O9QHzVccgDx8iww8xcIRhP8CI6Y',
+      'https://drive.google.com/uc?export=view&id=1U9etCk4Woo6pIamwFzcw4CRRxsG183KX',
     ],    status: 'ongoing',
     details: {
       type: 'Residential',
@@ -23,6 +19,57 @@ export const projects = [
     availability: "available",
     brochure: "https://drive.google.com/uc?export=download&id=19b-ZjylVjnV9TFOeUbku5a6zHcKGb32B",
     gallery: [
+      {
+        id: 1,
+        src: 'https://drive.google.com/uc?export=view&id=1GpaOoWXCNznOdC26353aogXxhfOjGjSB',
+        alt: ''
+      },
+      {
+        id: 2,
+        src: 'https://drive.google.com/uc?export=view&id=1LXG1OoF68R76z15b6idRpvQjgcU4fcOH',
+        alt: ''
+      },
+      {
+        id: 3,
+        src: 'https://drive.google.com/uc?export=view&id=1Nsah8O9QHzVccgDx8iww8xcIRhP8CI6Y',
+        alt: ''
+      },
+      {
+        id: 4,
+        src: 'https://drive.google.com/uc?export=view&id=1U9etCk4Woo6pIamwFzcw4CRRxsG183KX',
+        alt: ''
+      },
+      {
+        id: 5,
+        src: 'https://drive.google.com/uc?export=view&id=1-AiDYSQTPfW1DwFrf6UxL-PLeDcN35na',
+        alt: ''
+      },
+      {
+        id: 6,
+        src: 'https://drive.google.com/uc?export=view&id=11gv8Dgcd_CY-wk3U-bK7s1RyFFENwYxK',
+        alt: ''
+      },
+      {
+        id: 7,
+        src: 'https://drive.google.com/uc?export=view&id=1X3yVL9kvundb91HLmxwPWGqE79VQHFm0',
+        alt: ''
+      },
+      {
+        id: 8,
+        src: 'https://drive.google.com/uc?export=view&id=1EBs7W1Q5UrSae51d5bXlcjmEEv26jNjN',
+        alt: ''
+      },
+      {
+        id: 9,
+        src: 'https://drive.google.com/uc?export=view&id=1sFK4xsaumblOvHOh2FV5JpcQIuPnPbH6',
+        alt: ''
+      },
+      {
+        id: 10,
+        src: 'https://drive.google.com/uc?export=view&id=1fS9DXKy6tdSSuq1-lMegywx5FfRdu0T-',
+        alt: ''
+      },
+      /*
       {
         id: 1,
         src: 'https://drive.google.com/uc?export=view&id=1zloHIM1_-maW9npS34vHvyWS_Qku6XSE',
@@ -63,6 +110,7 @@ export const projects = [
         src: 'https://drive.google.com/uc?export=view&id=12yf-cUJtF2gZXLiHKaHZJ8fBqrPH8RSy',
         alt: ''
       },
+      */
     ],
     lat: 15.401455,
     lng: 73.840027,
@@ -74,11 +122,9 @@ export const projects = [
     description: 'A bold contemporary coastal project offering stunning sea views and modern living spaces that embrace Goa\'s coastal spirit.',
     image: [
       'https://drive.google.com/uc?export=view&id=1WAXJdrl-bMHItw-Hl4N0EiRc26T8LlPO',
-      'https://drive.google.com/uc?export=view&id=1gTSNJEtjYqb4pbcnU-M8n9IH4McRru4e',
-      'https://drive.google.com/uc?export=view&id=1SZAzWFqp8QURrVimeX8zQTeV0izWEydb',
-      'https://drive.google.com/uc?export=view&id=1ijM5YvpkRpbPosDgVwXTQM63My47kpZP',
-      'https://drive.google.com/uc?export=view&id=1xexlDQ2Zzylnq4xrNz4oausCxbJ1yfj2',
-      'https://drive.google.com/uc?export=view&id=19GhpJI4hyy-xM29SbqPaYFsRZMNw8z26',
+      'https://drive.google.com/uc?export=view&id=1hBCunyyAkLdyXfm4ynlH0WtLHjShzfxW',
+      'https://drive.google.com/uc?export=view&id=1qFJYpEs_YRAGSQb5SlzqnXJNBHmNY77o',
+      'https://drive.google.com/uc?export=view&id=1cFCF9dtUGLUFbN8zPK7gFciNR_9iADc2',
     ],    status: 'ongoing',
     details: {
       type: 'Residential',
@@ -88,7 +134,29 @@ export const projects = [
         availability: "available",
             brochure: "https://drive.google.com/uc?export=download&id=1sBVEHH18P9VpK1Z0PA8-F5wgzQRKG1ka",
             gallery: [
+              {
+        id: 1,
+        src: 'https://drive.google.com/uc?export=view&id=1WAXJdrl-bMHItw-Hl4N0EiRc26T8LlPO',
+        alt: ''
+      },
+            {
+        id: 2,
+        src: 'https://drive.google.com/uc?export=view&id=1hBCunyyAkLdyXfm4ynlH0WtLHjShzfxW',
+        alt: ''
+      },
       {
+        id: 3,
+        src: 'https://drive.google.com/uc?export=view&id=1qFJYpEs_YRAGSQb5SlzqnXJNBHmNY77o',
+        alt: ''
+      },
+      {
+        id: 4,
+        src: 'https://drive.google.com/uc?export=view&id=1cFCF9dtUGLUFbN8zPK7gFciNR_9iADc2',
+        alt: ''
+      },
+
+
+      /*{
         id: 1,
         src: 'https://drive.google.com/uc?export=view&id=1WAXJdrl-bMHItw-Hl4N0EiRc26T8LlPO',
         alt: ''
@@ -117,7 +185,7 @@ export const projects = [
         id: 6,
         src: 'https://drive.google.com/uc?export=view&id=19GhpJI4hyy-xM29SbqPaYFsRZMNw8z26',
         alt: ''
-      },
+      },*/
     ],
         lat: 15.390121,
     lng: 73.808594
@@ -131,7 +199,6 @@ export const projects = [
     image: [
       'https://drive.google.com/uc?export=view&id=1Ja6KqU8VDjGoo3fZF_tOuU4b_Ez0WstX',
       'https://drive.google.com/uc?export=view&id=1gQDkbex5_jzDk1JM0M0XUjpLFIKRsJLW',
-      'https://drive.google.com/uc?export=view&id=1xHISsCHH4wY8ppgvjG8X-JGGsaRTVLZe'
     ],    status: 'completed',
     details: {
       type: 'Residential',
@@ -214,7 +281,7 @@ export const projects = [
             gallery: [
       {
         id: 1,
-        src: 'https://drive.google.com/uc?export=view&id=1vzQ45i6i7GTaT1HKJLUngVJoSX-tescp',
+        src: 'https://drive.google.com/uc?export=view&id=18Ao8gGHKUTcBtOO1sfolg-k6K7UHGhSY',
         alt: ''
       },
       {
@@ -251,128 +318,28 @@ export const allProjects = [
 
 export const featuredProjects = projects.slice(0,3);
 
-
 export const gallery = [
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1kbEfx9E8LbRWHtfJ06KeLu49IEME7vTR',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1wf2YCh9fEgT2JQb_dnob5_Etd19RH8Gm',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1c5ilyrwZf8lEyn3d3airnxlmP2alH4Ka',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1xBoGZsD4cDLVj2lx6F8jFe7tglek5E7Y',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1gTSNJEtjYqb4pbcnU-M8n9IH4McRru4e',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1GyfJLA1L8MP71rAsXFf9RiY6xYpsGPAh',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1xexlDQ2Zzylnq4xrNz4oausCxbJ1yfj2',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1LGW-kfPlMLlXGdJZKQg4RcbR3ZHMl2Ez',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=12yf-cUJtF2gZXLiHKaHZJ8fBqrPH8RSy',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1Ja6KqU8VDjGoo3fZF_tOuU4b_Ez0WstX',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1R9N-XTXZQp-qyZbOwt26ekUjxutdyXjg',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1jWepFV3Nmkpa2QzlTCXyfbolae2rlScP',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=176gClztNrn42qY-Z8wga6BdmGDOumFaM',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1OnMdSm-T7u6sEuW_RfsGfNExTh4_YUQr',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1xwXLfdQZ6wvfFPLaMPSMMk3Pzld9GPdI',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1SZAzWFqp8QURrVimeX8zQTeV0izWEydb',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1ijM5YvpkRpbPosDgVwXTQM63My47kpZP',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1kaMB6WA9yDXPaKQXfUao59D5DWlgB00o',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1NOjkuMDs6xumNKywFcz0ZW7TmWMFScMy',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1h7q1uW7Bb8apjgN2oHZg_X7YhCFg_j0E',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1esKBG56F5pzu3Osdo0BWwaxGV9Fk8BUH',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1QXzVCyKSz8ps_3lJcowe11bgVAk29EMB',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1vzQ45i6i7GTaT1HKJLUngVJoSX-tescp',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1WAXJdrl-bMHItw-Hl4N0EiRc26T8LlPO',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1zloHIM1_-maW9npS34vHvyWS_Qku6XSE',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1-vibvo0RWSiVWzx0nJBs2AO1XijAGZzz',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=1cUQZ4u-_TRXxAsYcP4nkSYJP2HXZIzaj',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=150AQVRvnnNmmPuRidXnqviXzT8zeml-u',
-    title: ''
-  },
-  {
-    image: 'https://drive.google.com/uc?export=view&id=19GhpJI4hyy-xM29SbqPaYFsRZMNw8z26',
-    title: ''
-  },
-    {
-    image: 'https://drive.google.com/uc?export=view&id=1EUqzf4beEcvrYNAYWKqpHrP73Vjm0mw_',
-    title: ''
-  },
+  { image: 'https://drive.google.com/uc?export=view&id=1Ja6KqU8VDjGoo3fZF_tOuU4b_Ez0WstX', title: '' },
+  // { image: 'https://drive.google.com/uc?export=view&id=1gQDkbex5_jzDk1JM0M0XUjpLFIKRsJLW', title: '' },
+  { image: 'https://drive.google.com/uc?export=view&id=1WAXJdrl-bMHItw-Hl4N0EiRc26T8LlPO', title: '' },
+  { image: 'https://drive.google.com/uc?export=view&id=1hBCunyyAkLdyXfm4ynlH0WtLHjShzfxW', title: '' },
+  { image: 'https://drive.google.com/uc?export=view&id=1qFJYpEs_YRAGSQb5SlzqnXJNBHmNY77o', title: '' },
+  { image: 'https://drive.google.com/uc?export=view&id=1cFCF9dtUGLUFbN8zPK7gFciNR_9iADc2', title: '' },
+  { image: 'https://drive.google.com/uc?export=view&id=1xwXLfdQZ6wvfFPLaMPSMMk3Pzld9GPdI', title: '' },
+  { image: 'https://drive.google.com/uc?export=view&id=1-vibvo0RWSiVWzx0nJBs2AO1XijAGZzz', title: '' },
+  { image: 'https://drive.google.com/uc?export=view&id=1QXzVCyKSz8ps_3lJcowe11bgVAk29EMB', title: '' },
+  { image: 'https://drive.google.com/uc?export=view&id=14bFEPxexYkfyK4NapxEM8oEXljwrwzzt', title: '' },
+  { image: 'https://drive.google.com/uc?export=view&id=1h7q1uW7Bb8apjgN2oHZg_X7YhCFg_j0E', title: '' },
+  { image: 'https://drive.google.com/uc?export=view&id=150AQVRvnnNmmPuRidXnqviXzT8zeml-u', title: '' },
+  { image: 'https://drive.google.com/uc?export=view&id=1xHLYuI60Zl7Jvfs8SOTMJCTAOvQLGvjx', title: '' },
+  { image: 'https://drive.google.com/uc?export=view&id=1jWepFV3Nmkpa2QzlTCXyfbolae2rlScP', title: '' },
+  { image: 'https://drive.google.com/uc?export=view&id=1wf2YCh9fEgT2JQb_dnob5_Etd19RH8Gm', title: '' },
+  { image: 'https://drive.google.com/uc?export=view&id=18Ao8gGHKUTcBtOO1sfolg-k6K7UHGhSY', title: '' },
+  { image: 'https://drive.google.com/uc?export=view&id=1esKBG56F5pzu3Osdo0BWwaxGV9Fk8BUH', title: '' },
+  { image: 'https://drive.google.com/uc?export=view&id=1GyfJLA1L8MP71rAsXFf9RiY6xYpsGPAh', title: '' },
+  { image: 'https://drive.google.com/uc?export=view&id=1kbEfx9E8LbRWHtfJ06KeLu49IEME7vTR', title: '' },
+  { image: 'https://drive.google.com/uc?export=view&id=1LGW-kfPlMLlXGdJZKQg4RcbR3ZHMl2Ez', title: '' },
 ];
+
 
 

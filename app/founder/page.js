@@ -14,7 +14,7 @@ export default function AboutFounder() {
           <div className={styles.heroContent}>
             <div className={styles.founderImage}>
               <Image
-                src="https://drive.google.com/uc?export=view&id=15ZZGbD4cJsyPQqzPHfTdboowZ45Mml60"
+                src="https://drive.google.com/uc?export=view&id=1iuTZhPj01EjHb157YY4VsjO-KtondZ2u"
                 alt="Mr. Milind Subhedar"
                 width={400}
                 height={500}
@@ -123,34 +123,23 @@ export default function AboutFounder() {
           </div>
         </section> */}
 
-        <section className={styles.personal}>
-          <h2>Beyond Construction</h2>
-          <div className={styles.personalContent}>
-            {/* <div className={styles.interests}>
-              <h3>Personal Interests</h3>
-              <p>
-                When not overseeing construction projects, Michael enjoys spending time with his family, 
-                including his wife Sarah and their two children. He's passionate about sustainable architecture 
-                and often travels to study innovative building techniques from around the world.
-              </p>
-              <p>
-                Michael is also an avid photographer, with a particular interest in architectural photography. 
-                He believes that understanding buildings from an artistic perspective helps him appreciate 
-                the aesthetic aspects of construction that go beyond mere functionality.
-              </p>
-            </div> */}
-            
-            <div className={styles.community}>
-              <h3>Community Involvement</h3>
-              <ul>
-                <li>Board Member - Local Chamber of Commerce</li>
-                <li>Volunteer - Habitat for Humanity</li>
-                <li>Mentor - Young Professionals Construction Association</li>
-                <li>Speaker - Construction Industry Conferences</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+      <section className={styles.personal}>
+  <h2>A Decade of Service Leadership</h2>
+  <div className={styles.personalContent}>
+    <div className={styles.community}>
+      <h3>Lions Club Journey</h3>
+      <ul>
+        <li><span className={styles.year}>2015</span> Joined the Lions Club, marking the beginning of a dedicated journey in community service</li>
+        <li><span className={styles.year}>2017-2018</span> Served as Treasurer, handling financial responsibilities with integrity</li>
+        <li><span className={styles.year}>2018-2020</span> Held the position of Secretary, streamlining club communications and documentation</li>
+        <li><span className={styles.year}>2020-2022</span> Elevated to President, leading key initiatives and strengthening club operations</li>
+        <li><span className={styles.year}>2022-2023</span> Appointed Zone Chairperson, overseeing and supporting multiple clubs within the region</li>
+        <li><span className={styles.year}>2025</span> Instrumental in the installation of the Lions Club of Sancoale, expanding the club's reach and impact</li>
+        <li><span className={styles.year}>Present</span> Serving as Club Secretary of the newly formed Lions Club of Sancoale, continuing a legacy of leadership and service</li>
+      </ul>
+    </div>
+  </div>
+</section>
       </div>
     </div>
   )

@@ -256,7 +256,7 @@
 .values strong {
   color: #e74c3c;
 }
-
+/* Add to your existing CSS */
 .personal {
   padding: 80px 0;
   background-color: #f8f9fa;
@@ -267,78 +267,136 @@
   font-size: 2.5rem;
   color: #2c3e50;
   margin-bottom: 60px;
+  position: relative;
+}
+
+.personal h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #e74c3c;
+  margin: 20px auto 0;
 }
 
 .personalContent {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.interests h3,
+.community {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  border-top: 4px solid #e74c3c;
+}
+
 .community h3 {
   color: #2c3e50;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ecf0f1;
+  display: flex;
+  align-items: center;
+}
+
+.community h3::before {
+  content: '👔';
+  margin-right: 12px;
   font-size: 1.3rem;
-}
-
-.interests p {
-  color: #34495e;
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
-
-.community{
- padding: 16px;
 }
 
 .community ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .community li {
-  padding: 8px 0;
+  padding: 15px 0;
   color: #34495e;
-  border-bottom: 1px solid #ecf0f1;
+  line-height: 1.6;
+  border-bottom: 1px solid #f1f3f5;
+  position: relative;
+  padding-left: 30px;
+  font-size: 1.05rem;
+}
+
+.community li::before {
+  content: '•';
+  color: #e74c3c;
+  font-size: 1.8rem;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  line-height: 0;
 }
 
 .community li:last-child {
   border-bottom: none;
 }
 
+/* Highlight years */
+.community li {
+  position: relative;
+}
+
+.community li span.year {
+  font-weight: 600;
+  color: #e74c3c;
+  background: rgba(231, 76, 60, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .heroContent {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    text-align: center;
+  .personal {
+    padding: 60px 0;
   }
   
-  .founderImage {
-    max-width: 300px;
-    margin: 0 auto;
+  .personal h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
   }
   
-  .founderInfo h1 {
-    font-size: 2.5rem;
+  .community {
+    padding: 25px;
   }
   
-  .philosophyContent {
-    grid-template-columns: 1fr;
-    gap: 40px;
+  .community h3 {
+    font-size: 1.3rem;
   }
   
-  .personalContent {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  
-  .qualificationsGrid {
-    grid-template-columns: 1fr;
+  .community li {
+    font-size: 1rem;
+    padding-left: 25px;
   }
 }
 
 @media (max-width: 480px) {
-  .founderInfo h1 {
-    font-size: 2rem;
+  .personal {
+    padding: 50px 0;
+  }
+  
+  .personal h2 {
+    font-size: 1.8rem;
+  }
+  
+  .community {
+    padding: 20px;
+  }
+  
+  .community li {
+    padding: 12px 0 12px 22px;
+  }
+  
+  .community li::before {
+    font-size: 1.5rem;
+    top: 6px;
   }
 }
