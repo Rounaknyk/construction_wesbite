@@ -193,7 +193,7 @@ export default function ProjectCard({ project, showStatus = false, showCompletio
               <p className={`${styles.statusBadge2} ${
                 project.availability === 'available' ? styles.available : styles.notAvailable
               }`}>
-                {project.availability === 'available' ? 'Available' : 'Not Available'}
+                {project.availability === 'available' ? 'Available' : 'Sold Out'}
               </p>
             </div>
               </div>
@@ -210,17 +210,21 @@ export default function ProjectCard({ project, showStatus = false, showCompletio
             </a>
             
           )}
+          <br></br>
+           <br></br>
 
 
-            <button 
-      className={styles.viewGalleryBtn}
-      onClick={(e) => {
+<a 
+              className={styles.downloadBtn}
+              onClick={(e) => {
         e.stopPropagation();
         window.location.href = `/gallery?project=${project.id}`;
       }}
-    >
-      View in Gallery
-    </button>
+            >
+              View Gallery
+            </a>
+
+      
 
 
             <section className={styles.mapSection}>

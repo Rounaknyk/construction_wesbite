@@ -187,11 +187,7 @@ export const projects = [
         src: 'https://drive.google.com/uc?export=view&id=1wf2YCh9fEgT2JQb_dnob5_Etd19RH8Gm',
         alt: ''
       },
-      {
-        id: 20,
-        src: 'https://drive.google.com/uc?export=view&id=1OnMdSm-T7u6sEuW_RfsGfNExTh4_YUQr',
-        alt: ''
-      }
+    
 
     ],
     lat: 15.3871033,
