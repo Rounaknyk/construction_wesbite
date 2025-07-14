@@ -1,11 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 
-export const metadata = {
-  title: 'About Our Founder - Michael Rodriguez | Siddharth Constructions',
-  description: 'Meet Michael Rodriguez, founder and CEO of Siddharth Constructions, with over 20 years of experience in the construction industry.',
-}
-
 export default function AboutFounder() {
   return (
     <div className={styles.founderPage}>
