@@ -64,11 +64,7 @@ export const projects = [
         src: 'https://drive.google.com/uc?export=view&id=1sFK4xsaumblOvHOh2FV5JpcQIuPnPbH6',
         alt: ''
       },
-      {
-        id: 10,
-        src: 'https://drive.google.com/uc?export=view&id=1fS9DXKy6tdSSuq1-lMegywx5FfRdu0T-',
-        alt: ''
-      },
+    
       /*
       {
         id: 1,
@@ -269,7 +265,7 @@ export const projects = [
     image: [
       'https://drive.google.com/uc?export=view&id=1c5ilyrwZf8lEyn3d3airnxlmP2alH4Ka',
       'https://drive.google.com/uc?export=view&id=1yX85MqM3J3hRYXyQDnbZEPGpUhwUCjFz',
-      'https://drive.google.com/uc?export=view&id=176gClztNrn42qY-Z8wga6BdmGDOumFaM'
+      'https://drive.google.com/uc?export=view&id=1esKBG56F5pzu3Osdo0BWwaxGV9Fk8BUH'
     ],    status: 'ongoing',
     details: {
       type: 'Villas',
@@ -279,11 +275,7 @@ export const projects = [
         availability: "available",
             brochure: "https://drive.google.com/uc?export=download&id=1vd3aWnq7uW2xSAClnVsoQYD1hce9J96u",
             gallery: [
-      {
-        id: 1,
-        src: 'https://drive.google.com/uc?export=view&id=18Ao8gGHKUTcBtOO1sfolg-k6K7UHGhSY',
-        alt: ''
-      },
+      
       {
         id: 2,
         src: 'https://drive.google.com/uc?export=view&id=1esKBG56F5pzu3Osdo0BWwaxGV9Fk8BUH',
@@ -334,7 +326,6 @@ export const gallery = [
   { image: 'https://drive.google.com/uc?export=view&id=1xHLYuI60Zl7Jvfs8SOTMJCTAOvQLGvjx', title: '' },
   { image: 'https://drive.google.com/uc?export=view&id=1jWepFV3Nmkpa2QzlTCXyfbolae2rlScP', title: '' },
   { image: 'https://drive.google.com/uc?export=view&id=1wf2YCh9fEgT2JQb_dnob5_Etd19RH8Gm', title: '' },
-  { image: 'https://drive.google.com/uc?export=view&id=18Ao8gGHKUTcBtOO1sfolg-k6K7UHGhSY', title: '' },
   { image: 'https://drive.google.com/uc?export=view&id=1esKBG56F5pzu3Osdo0BWwaxGV9Fk8BUH', title: '' },
   { image: 'https://drive.google.com/uc?export=view&id=1GyfJLA1L8MP71rAsXFf9RiY6xYpsGPAh', title: '' },
   { image: 'https://drive.google.com/uc?export=view&id=1kbEfx9E8LbRWHtfJ06KeLu49IEME7vTR', title: '' },

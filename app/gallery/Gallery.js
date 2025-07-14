@@ -53,6 +53,30 @@ export default function Gallery() {
           <p>Explore photos from our construction projects</p>
         </section>
 
+
+<section className={styles.videoSection}>
+  <h2>Our Videos</h2>
+  <div className={styles.videoGrid}>
+    <div className={styles.videoItem}>
+      <iframe
+        src="https://www.youtube.com/embed/EC33Maj2T9E"
+        title="YouTube video 1"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+    <div className={styles.videoItem}>
+      <iframe
+        src="https://www.youtube.com/embed/th_ejWk0uf8"
+        title="YouTube video 2"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+    {/* Add more video blocks as needed */}
+  </div>
+</section>
+
         {/* Add this Slider section */}
     <section className={styles.sliderSection}>
   <div className={styles.sliderContainer}>
@@ -146,6 +170,8 @@ export default function Gallery() {
             </div>
           </div>
         )}
+
+
       </div>
     </div>
   )

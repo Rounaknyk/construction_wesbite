@@ -63,7 +63,7 @@ export default function AboutFounder() {
 
                  <div className={styles.timelineItem}>
                  <div className={styles.year}>2018-Present</div>
-                  <div className={styles.position}>Founder of Siddharth Constructions</div>
+                  <div className={styles.position}>Proprietor of Siddharth Constructions</div>
 
                 </div>
               </div>
