@@ -22,7 +22,7 @@ export default function AboutFounder() {
             </div>
             <div className={styles.founderInfo}>
               <h1>Mr. Milind Subhedar</h1>
-              <p className={styles.title}>Founder & CEO</p>
+              <p className={styles.title}>Proprietor</p>
             </div>
           </div>
         </section>
