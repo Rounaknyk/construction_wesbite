@@ -135,6 +135,7 @@ useEffect(() => {
       <p>Professional Team</p>
     </div>
   </div>
+  
 </section>
         <section className={styles.team}>
           <h2>Our Team</h2>

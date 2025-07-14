@@ -3,7 +3,6 @@
 .homepage {
   padding-top: 70px;
 }
-
 /* Hero Section */
 .hero {
   position: relative;
@@ -11,13 +10,37 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: background-image 1s ease-in-out;
   padding: 0 20px;
   text-align: center;
   color: white;
+  overflow: hidden;
+}
+
+.heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.heroBgLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  transform: scale(1.05); /* Subtle zoom effect to prevent white edges */
+}
+
+.heroBgLayer.active {
+  opacity: 1;
 }
 
 .heroOverlay {
@@ -27,23 +50,20 @@
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
 .heroContent {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   padding: 40px;
-  /* background: rgba(0, 0, 0, 0.6);
-  border-radius: 15px;
-  backdrop-filter: blur(5px); */
 }
-
 
 .heroContent h1 {
   font-family: 'Bropella', serif;
   font-size: 6.5rem;
-  margin: auto; /* Changed margin to auto for horizontal centering */
+  margin: auto;
   color: white;
   font-weight: 800;
   text-shadow: 
@@ -52,9 +72,9 @@
   letter-spacing: 4px;
   line-height: 1;
   text-align: center;
-  width: fit-content; /* Changed from 100% to fit-content */
-  padding: 0 8px; /* Compensates for letter-spacing */
-  transform: translateX(4px); /* Fine-tune visual centering */
+  width: fit-content;
+  padding: 0 8px;
+  transform: translateX(4px);
 }
 
 .tagline {

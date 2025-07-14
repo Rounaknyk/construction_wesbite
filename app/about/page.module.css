@@ -252,16 +252,27 @@
   width: 100vw;
 }
 
+/* Why Choose Us Section - Updated */
 .whyChooseBg {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  border-radius: 15px;
   overflow: hidden;
   min-height: 700px;
   display: flex;
   align-items: center;
+}
+
+/* Add this new class for the background image */
+.whyChooseBgImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(0); /* Remove blur if present */
+  transform: scale(1.1); /* Slightly zoomed in for better coverage */
+  z-index: 0;
 }
 
 .whyChooseOverlay {

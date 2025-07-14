@@ -1,5 +1,4 @@
 'use client'
-
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
@@ -12,13 +11,13 @@ import Counter from './components/Counter'
 export default function Home() {
   const [heroBgIndex, setHeroBgIndex] = useState(0)
   const [servicesBgIndex, setServicesBgIndex] = useState(0)
-
+  
   const heroBgImages = [
     'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80', // Goa beach
     'https://images.unsplash.com/photo-1566438480900-0609be27a4be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2094&q=80', // Palm trees
     'https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1968&q=80', // Goa sunset
   ]
-
+  
   const servicesBgImages = [
     'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80', // Beach with palms
     'https://images.unsplash.com/photo-1470114716159-e389f8712fda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80', // Forest view
@@ -29,11 +28,11 @@ export default function Home() {
     const heroInterval = setInterval(() => {
       setHeroBgIndex((prev) => (prev + 1) % heroBgImages.length)
     }, 5000)
-
+    
     const servicesInterval = setInterval(() => {
       setServicesBgIndex((prev) => (prev + 1) % servicesBgImages.length)
     }, 6000)
-
+    
     return () => {
       clearInterval(heroInterval)
       clearInterval(servicesInterval)
@@ -43,10 +42,18 @@ export default function Home() {
   return (
     <div className={styles.homepage}>
       {/* Hero Section */}
-      <section 
-        className={styles.hero} 
-        style={{ backgroundImage: `url(${heroBgImages[heroBgIndex]})` }}
-      >
+      <section className={styles.hero}>
+        {/* Background Image Layers */}
+        <div className={styles.heroBackground}>
+          {heroBgImages.map((image, index) => (
+            <div
+              key={index}
+              className={`${styles.heroBgLayer} ${index === heroBgIndex ? styles.active : ''}`}
+              style={{ backgroundImage: `url(${image})` }}
+            />
+          ))}
+        </div>
+        
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
           <h1>Siddharth</h1>
