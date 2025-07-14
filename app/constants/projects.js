@@ -14,7 +14,7 @@ export const projects = [
     details: {
       type: 'Residential',
       features: ['Waterfront location', 'Upscale amenities', 'Prime connectivity'],
-      possession: '24 months'
+      possession: '2027'
     },
     availability: "available",
     brochure: "https://drive.google.com/uc?export=download&id=19b-ZjylVjnV9TFOeUbku5a6zHcKGb32B",
@@ -274,7 +274,7 @@ export const projects = [
     details: {
       type: 'Villas',
       features: ['Private villas', 'Luxury finishes'],
-      possession: '2022'
+      possession: '2026'
     },
         availability: "available",
             brochure: "https://drive.google.com/uc?export=download&id=1vd3aWnq7uW2xSAClnVsoQYD1hce9J96u",
