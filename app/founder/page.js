@@ -49,8 +49,8 @@ export default function AboutFounder() {
                 <div className={styles.timelineItem}>
                   <div className={styles.year}>2000-2020</div>
                   <div className={styles.position}>Founder of Prime Electricals</div>
-                                    <div className={styles.position}>Electrical trader and contractor</div>
-                  <div className={styles.position}>Handled projects accross Goa</div>
+                                    <div className={styles.position2}>Electrical trader and contractor</div>
+                  <div className={styles.position2}>Handled projects accross Goa</div>
 
                 </div>
                 

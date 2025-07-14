@@ -129,7 +129,7 @@ export const projects = [
     details: {
       type: 'Residential',
       features: ['Sea views', 'Modern architecture', 'Coastal living'],
-      possession: '30 months'
+      possession: '2027'
     },
         availability: "available",
             brochure: "https://drive.google.com/uc?export=download&id=1sBVEHH18P9VpK1Z0PA8-F5wgzQRKG1ka",
