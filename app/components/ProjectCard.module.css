@@ -1,0 +1,579 @@
+/*projectcardmodulecss*/
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.imageContainer {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.imageSlider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imageSlide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.imageSlide.active {
+  opacity: 1;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+.indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.activeDot {
+  background-color: white;
+}
+
+.status {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+  z-index: 3;
+}
+
+.upcoming {
+  background-color: #3498db;
+}
+
+.ongoing {
+  background-color: #e74c3c;
+}
+
+.completed {
+  background-color: #2ecc71;
+}
+
+.status.completed {
+  background-color: #2ecc71;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h3 {
+  margin-bottom: 5px;
+  color: #2c3e50;
+  font-size: 1.3rem;
+}
+
+.location {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #34495e;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.details {
+  display: flex;
+  gap: 15px;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.details span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.completion {
+  margin-top: 15px;
+}
+
+.completionBar {
+  height: 6px;
+  background: #e9ecef;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.completionFill {
+  height: 100%;
+  border-radius: 3px;
+  background: #2ecc71;
+  transition: width 0.5s ease;
+}
+
+.detailsBtn {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(44,62,80,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modalContent {
+  background: #fff;
+  padding: 32px;
+  border-radius: 10px;
+  max-width: 700px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.imageGallery {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.imageGallery img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Add these styles to your ProjectCard.module.css */
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(44, 62, 80, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.modalContent {
+  background: white;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.closeBtn:hover {
+  background: #c0392b;
+  transform: scale(1.1);
+}
+
+.modalContent h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.modalLocation {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.modalImageSlider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.modalImageSlide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.modalImageSlide.active {
+  opacity: 1;
+}
+
+.modalImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modalIndicators {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.modalDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modalDot.activeDot {
+  background: white;
+  transform: scale(1.2);
+}
+
+.modalDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.modalDescription {
+  grid-column: 1 / -1;
+}
+
+.modalDescription h3,
+.modalFeatures h3 {
+  color: #2c3e50;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 8px;
+}
+
+.modalDescription p {
+  color: #34495e;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.modalFeatures ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.modalFeatures li {
+  padding: 8px 0;
+  color: #34495e;
+  position: relative;
+  padding-left: 20px;
+}
+
+.modalFeatures li::before {
+  content: '•';
+  color: #e74c3c;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 1;
+}
+
+.modalSpecs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.specItem {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+}
+
+.specItem h4 {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.specItem p {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  margin: 0;
+  text-align: center;
+}
+
+.available {
+  background-color: #2ecc71;
+}
+
+.notAvailable {
+  background-color: #cb3232;
+}
+
+.statusBadge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  text-transform: capitalize;
+}
+
+.statusBadge2 {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .modalDetails {
+    grid-template-columns: 1fr;
+  }
+  
+  .modalImageSlider {
+    height: 300px;
+  }
+  
+  .modalContent {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modalImageSlider {
+    height: 200px;
+  }
+  
+  .modalContent h2 {
+    font-size: 1.5rem;
+  }
+  
+  .modalSpecs {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mapSection {
+  padding: 60px 0;
+}
+
+.mapSection h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.mapContainer {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.downloadBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+.downloadBtn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.downloadBtn:active {
+  transform: translateY(0);
+}
+/* If you want to add an icon */
+.downloadBtn::before {
+  content: "↓";
+  font-size: 1em;
+}
+
+
+@media (max-width: 768px) {
+  .buttonContainer {
+    right: 50px;
+  }
+  
+  .downloadBtn {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .buttonContainer {
+    top: 10px;
+    right: 10px;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+  }
+  
+  .downloadBtn {
+    padding: 6px 10px;
+    font-size: 0.7rem;
+  }
+  
+  .downloadBtn::before {
+    font-size: 0.8em;
+  }
+  /* Adjust close button position to avoid overlap */
+  .closeBtn {
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }}
+
+/* For very small devices */
+@media (max-width: 350px) {
+  .buttonContainer {
+    top: 5px;
+    right: 5px;
+  }
+  
+  .downloadBtn {
+    padding: 5px 8px;
+  }
+}
+
+.viewGalleryBtn {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.viewGalleryBtn:hover {
+  background: #2980b9;
+}

@@ -1,0 +1,546 @@
+.aboutPage {
+  padding-top: 10px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 0;
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: white;
+  margin-bottom: 80px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Mission Section */
+.mission {
+  margin-bottom: 80px;
+}
+
+.missionContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.textContent h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.textContent p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #34495e;
+}
+
+.imageContainer {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* Updated Values Section CSS */
+.values {
+  position: relative;
+  margin-bottom: 80px;
+  overflow: hidden;
+  min-height: 800px;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  width: 100vw;
+}
+
+.valuesBackground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.valueBgImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.valueBgImage.active {
+  opacity: 0.3;
+}
+
+.valuesOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(44, 62, 80, 0.6), rgba(52, 73, 94, 0.5));
+  z-index: 2;
+}
+
+.valuesContent {
+  position: relative;
+  z-index: 3;
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.values h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: white;
+  margin-bottom: 60px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  font-weight: 700;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.valueCard {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.valueCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  background: rgba(255, 255, 255, 0.98);
+}
+
+.valueIcon {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.valueCard:hover .valueIcon {
+  transform: scale(1.1);
+}
+
+.valueCard h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.valueCard p {
+  color: #5d6d7e;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+/* Team Section */
+.team {
+  margin: 80px 0;
+}
+
+.team h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.teamSubtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin-bottom: 60px;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.teamCard {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.teamCard:hover {
+  transform: translateY(-5px);
+}
+
+.teamPhoto {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.teamImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.teamCard:hover .teamImage {
+  transform: scale(1.05);
+}
+
+.teamInfo {
+  padding: 25px;
+}
+
+.teamInfo h3 {
+  color: #2c3e50;
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+}
+
+.teamRole {
+  color: #e74c3c;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.teamBio {
+  color: #7f8c8d;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Why Choose Us Section */
+/* Why Choose Us Section - Horizontal Layout */
+.whyChooseUs {
+  margin-bottom: 80px;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  width: 100vw;
+  overflow-x: hidden; /* Prevent horizontal page scroll */
+}
+
+.whyChooseBg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  min-height: 600px; /* Reduced height for horizontal layout */
+  display: flex;
+  align-items: center;
+}
+
+
+.whyChooseBg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  min-height: auto; /* Changed from fixed height */
+  display: flex;
+  align-items: center;
+  padding: 60px 0; /* Added vertical padding */
+}
+
+/* Add this new class for the background image */
+.whyChooseBgImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(0); /* Remove blur if present */
+  transform: scale(1.1); /* Slightly zoomed in for better coverage */
+  z-index: 0;
+}
+
+.whyChooseOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+  z-index: 1;
+}
+
+.whyChooseContent {
+  position: relative;
+  z-index: 2;
+  padding: 60px 20px;
+  color: white;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+.whyChooseContent h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  font-weight: 700;
+}
+
+.reasonsContainer {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  padding: 20px 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  justify-content: center; /* Center the cards */
+  align-items: center; /* Vertically center if needed */
+}
+
+.reasonsContainer::-webkit-scrollbar {
+  height: 8px;
+}
+
+.reasonsContainer::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+}
+
+.reasonsContainer::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.3);
+  border-radius: 10px;
+}
+
+
+.reasonsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Reduced from 100px */
+  max-width: 800px;
+  margin: 0 auto;
+}
+.reason {
+  background: rgba(255, 255, 255, 0.95);
+  color: #2c3e50;
+  padding: 30px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 300px; /* Fixed width instead of percentage for better centering */
+}
+.reason:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+
+.reason h3 {
+  color: #e74c3c;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.reason p {
+  color: #5d6d7e;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Enhanced Responsive Styles */
+@media (max-width: 768px) {
+  .values {
+    min-height: 900px;
+  }
+  
+  .values h2 {
+    font-size: 2.2rem;
+  }
+  
+  .valuesGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .valueCard {
+    padding: 20px;
+  }
+  
+  .whyChooseBg {
+    min-height: 500px;
+  }
+  
+  .whyChooseContent {
+    padding: 30px 20px;
+  }
+  
+ .whyChooseContent h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+  
+ .reasonsContainer {
+    flex-direction: column;
+    overflow-x: visible;
+    scroll-snap-type: none;
+    padding: 20px 20px;
+    align-items: center;
+  }
+  
+  .reason {
+    width: 100%;
+    max-width: 400px;
+    min-width: unset;
+  }
+  .reasonsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .values {
+    min-height: 1000px;
+  }
+  
+  .values h2 {
+    font-size: 1.8rem;
+  }
+  
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .valueCard {
+    padding: 18px;
+  }
+  
+  .whyChooseContent {
+    padding: 60px 20px;
+  }
+  
+  .whyChooseContent h2 {
+    font-size: 1.8rem;
+  }
+  
+  
+  .reasonsGrid {
+    grid-template-columns: 1fr;
+  }
+
+   .reason {
+    min-width: 220px;
+    padding: 20px;
+  }
+  
+   .reason h3 {
+    font-size: 1.2rem;
+  }
+  
+    
+  .reason p {
+    font-size: 0.9rem;
+  }
+
+}
+
+
+.achievements {
+  margin-bottom: 80px;
+}
+
+.achievements h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 60px;
+}
+
+.achievementsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.achievementCard {
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.achievementCard h3 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.achievementCard p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .missionContent {
+    grid-template-columns: 1fr; /* Stack vertically */
+    text-align: center;
+  }
+
+  .textContent h2 {
+    font-size: 2rem;
+  }
+
+  .textContent p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .imageContainer {
+    order: -1; /* Show image above text on small screens if preferred */
+  }
+
+  .imageContainer img {
+    width: 100%;
+    height: auto;
+  }
+}
